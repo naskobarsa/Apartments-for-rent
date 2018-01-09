@@ -1,0 +1,11 @@
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.csprojResolveAssemblyReference.cache
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.csproj.CoreCompileInputs.cache
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.AssemblyInfoInputs.cache
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.AssemblyInfo.cs
+C:\Users\nac\source\repos\Loops\_1\bin\Debug\netcoreapp2.0\_1.deps.json
+C:\Users\nac\source\repos\Loops\_1\bin\Debug\netcoreapp2.0\_1.runtimeconfig.json
+C:\Users\nac\source\repos\Loops\_1\bin\Debug\netcoreapp2.0\_1.runtimeconfig.dev.json
+C:\Users\nac\source\repos\Loops\_1\bin\Debug\netcoreapp2.0\_1.dll
+C:\Users\nac\source\repos\Loops\_1\bin\Debug\netcoreapp2.0\_1.pdb
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.dll
+C:\Users\nac\source\repos\Loops\_1\obj\Debug\netcoreapp2.0\_1.pdb

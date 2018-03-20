@@ -1,0 +1,931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="head"><title>
+	
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="content-style-type" content="text/css" /> 
+<meta http-equiv="content-script-type" content="text/javascript" /> 
+<link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/ui-lightness/jquery-ui.css" /><link href="/CMSPages/GetResource.ashx?stylesheetname=RPcssMaster_S0071-Aurora" type="text/css" rel="stylesheet" /> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js" type="text/javascript"></script><script src="/CMSScripts/Custom/RPWebParts/global.min.js" type="text/javascript"></script><meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="geo.position" content="32.7811883;-96.8080846" />
+<meta name="geo.placename" content="Dallas" />
+<meta name="geo.region" content="US-TX" />
+<meta name="ICBM" content="32.7811883, -96.8080846" />
+
+<link type="text/css" href="/TemplateResources/Global/Icons/font-awesome.min.css" rel="stylesheet" />
+<link type="text/css" href="/TemplateResources/Global/Icons/fontello.css" rel="stylesheet" />
+<link rel="stylesheet" href="/GlobalResources/Bootstrap/css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.js" type="text/javascript"></script>
+<script src="/GlobalResources/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- <script src="/TemplateResources/Standard/Aurora/scripts/Aurora.js"></script> -->
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    
+    $('#menuElem li.residents a').attr('target','_blank');
+    
+    sizeSpecials();
+    
+    $("[data-toggle='toggle']").click(function() {
+      var selector = $(this).data("target");
+      $(selector).toggleClass('in');
+      var selectorClass = $(selector).hasClass('in');
+    });
+    
+    var height = $(window).scrollTop();
+    
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      var width = $(window).width();
+      if(height  == 0) {
+        $('.header').removeClass('narrow');
+        $("#scroll-down").removeClass('faded');
+      }
+      if(height  > 0) {
+        $('.header').addClass('narrow');
+        $("#scroll-down").addClass('faded');
+      }
+    });
+    
+    $("#scroll-down").click(function() {
+      var width = $(window).width();
+      $("#scroll-down").addClass('faded');
+      if (width > 1199) {
+        var homeScrollPoint = $(".home-section2").offset().top - 218;
+      }
+      else {
+        var homeScrollPoint = $(".home-section2").offset().top - 238;
+      }
+      $('html, body').animate({
+        scrollTop: homeScrollPoint
+      }, 1500, 'easeOutExpo');
+    });
+    
+    function sizeSpecials() {
+      var winHeight = $(window).height();
+      var headerHeight = $('.header-top-bar').outerHeight();
+      var specialsHeight = winHeight - headerHeight;
+      $('#specials-flyout') .css('max-height', specialsHeight + 'px');
+    }
+      
+    $(window).resize(function () {
+      sizeSpecials();
+    });
+    
+    var hideSocialCTA = 'Availability';
+    if (hideSocialCTA != "") {
+      $('#section4-left-panel a.home-cta-button').css('display', 'inline-block');
+    }
+    
+  });
+</script><script src="/RPresourceFiles/misc/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="/RPresourceFiles/misc/jquery.mousewheel.min.js" type="text/javascript"></script>
+<style type="text/css">
+.dvAmtImg{
+  border:1px solid #B56209;
+  }
+  .featured-amenities-wrapper{
+    padding-top:20px;
+  }
+  .featured-amenities{
+    min-height:254px;
+    border:1px solid #B56209;
+    }
+  .amenities-wrapper
+  {
+    min-height:350px;
+    }
+</style>
+<noscript>
+    <style type="text/css">
+        #mcs_container .customScrollBox{overflow:auto;}
+        #mcs_container .dragger_container{display:none;}
+    </style>
+</noscript> 
+<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+<link href="/favicon.ico" type="image/x-icon" rel="icon" /> 
+<link href="/CmsPages/GetResource.ashx?stylesheetname=rpWebpartCss_MediaViewer;RpWebpartCss_PopUp;rpWebpartCss_OfficeHours;rpWebpartCss_RealPageLogo;rpWebpartCss_AdaHudicons" type="text/css" rel="stylesheet" /> 
+
+    <script type="text/javascript">
+        var sourcesList = JSON.parse('[{"DisplayName":"Apartment Finder Blue Book","PmSourceId":"S000000033"},{"DisplayName":"Apartment Guide","PmSourceId":"S000000036"},{"DisplayName":"Apartment Map","PmSourceId":"S000000034"},{"DisplayName":"ApartmentFinder.com","PmSourceId":"S000000041"},{"DisplayName":"ApartmentGuide.com","PmSourceId":"S000000003"},{"DisplayName":"Apartmentlinks.com","PmSourceId":"S000000011"},{"DisplayName":"ApartmentMatching.com","PmSourceId":"S000000004"},{"DisplayName":"ApartmentRatings.com","PmSourceId":"S000000042"},{"DisplayName":"Apartments.com","PmSourceId":"S000000005"},{"DisplayName":"ApartmentsNationwide.com","PmSourceId":"S000000006"},{"DisplayName":"ApartmentsPlus.com","PmSourceId":"S000000050"},{"DisplayName":"Billboard","PmSourceId":"S000000019"},{"DisplayName":"Brochure/Flyer","PmSourceId":"S000000020"},{"DisplayName":"CitySearch.com","PmSourceId":"S000000043"},{"DisplayName":"CraigsList.com","PmSourceId":"S000000044"},{"DisplayName":"Current resident","PmSourceId":"S000000027"},{"DisplayName":"Drive by","PmSourceId":"S000000021"},{"DisplayName":"EasyRent.com","PmSourceId":"S000000007"},{"DisplayName":"For Rent Magazine","PmSourceId":"S000000035"},{"DisplayName":"ForRent.com","PmSourceId":"S000000008"},{"DisplayName":"Google.com","PmSourceId":"S000000040"},{"DisplayName":"LivingChoices.com","PmSourceId":"S000000002"},{"DisplayName":"Local Line Rollover","PmSourceId":"S000000069"},{"DisplayName":"Local Newspaper","PmSourceId":"S000000016"},{"DisplayName":"Local Newspaper II","PmSourceId":"S000000017"},{"DisplayName":"Locator Service","PmSourceId":"S000000015"},{"DisplayName":"Move.com","PmSourceId":"S000000049"},{"DisplayName":"MoveForFree.com","PmSourceId":"S000000045"},{"DisplayName":"MyNewPlace.com","PmSourceId":"S000000039"},{"DisplayName":"National Newspaper","PmSourceId":"S000000018"},{"DisplayName":"Other","PmSourceId":"S000000026"},{"DisplayName":"Other OneSite property","PmSourceId":"S000000031"},{"DisplayName":"Other property","PmSourceId":"S000000032"},{"DisplayName":"Other publication","PmSourceId":"S000000037"},{"DisplayName":"Other site","PmSourceId":"S000000014"},{"DisplayName":"Preferred employer program","PmSourceId":"S000000028"},{"DisplayName":"Prior resident","PmSourceId":"S000000029"},{"DisplayName":"Property web site","PmSourceId":"S000000001"},{"DisplayName":"Radio Advertising","PmSourceId":"S000000025"},{"DisplayName":"Referral companies/merchants","PmSourceId":"S000000030"},{"DisplayName":"Rent.com","PmSourceId":"S000000012"},{"DisplayName":"Rentals.com","PmSourceId":"S000000010"},{"DisplayName":"RentAndMove.com","PmSourceId":"S000000013"},{"DisplayName":"RentClicks.com","PmSourceId":"S000000046"},{"DisplayName":"RentNet.com","PmSourceId":"S000000009"},{"DisplayName":"Sign","PmSourceId":"S000000023"},{"DisplayName":"TV Advertising","PmSourceId":"S000000024"},{"DisplayName":"UMoveFree.com","PmSourceId":"S000000047"},{"DisplayName":"Unknown/Would not give","PmSourceId":"S000000038"},{"DisplayName":"Yahoo.com","PmSourceId":"S000000048"},{"DisplayName":"Yellow pages","PmSourceId":"S000000022"}]');
+        var matchedSource = f_getSessionStorage('matchedSource');
+        var matchedSourceId = f_getSessionStorage('matchedSourceId');
+
+        if (!matchedSource) {
+            var referrerUrl = f_getSessionStorage('referrerUrl');
+            if (!referrerUrl && document.referrer && document.referrer.indexOf(document.domain) == -1) {
+                referrerUrl = document.referrer;
+                f_setSessionStorage('referrerUrl', document.referrer);
+            }
+            if (referrerUrl) {
+                var a = document.createElement('a');
+                a.setAttribute('href', referrerUrl);
+                referrerUrl = a.hostname;
+
+                if (referrerUrl.split('.com.').length > 1)
+                    referrerUrl = referrerUrl.substring(0, referrerUrl.lastIndexOf('.com.') + 4);
+                else if (referrerUrl.split('.co.').length > 1)
+                    referrerUrl = referrerUrl.substring(0, referrerUrl.lastIndexOf('.co.') + 3);
+
+                var referralFound = false;
+                $(sourcesList).each(function() {
+                    if (referrerUrl && referrerUrl.match(/[^.]+.[^.]+(?=\.*$)/) && this.DisplayName.toLowerCase().indexOf(referrerUrl.match(/[^.]+.[^.]+(?=\.*$)/).toString().toLowerCase()) > -1) {
+                        matchedSource = encodeURIComponent(this.DisplayName);
+                        f_setSessionStorage('matchedSource', encodeURIComponent(this.DisplayName));
+                        matchedSourceId = this.PmSourceId;
+                        f_setSessionStorage('matchedSourceId', this.PmSourceId);
+                        referralFound = true;
+                    }
+                });
+                if (!referralFound)
+                    $(sourcesList).each(function() {
+                        if (referrerUrl && this.DisplayName.toLowerCase().indexOf(referrerUrl.match(/\w+(?=\.[^.]*$)/).toString().toLowerCase()) > -1) {
+                            matchedSource = encodeURIComponent(this.DisplayName);
+                            f_setSessionStorage('matchedSource', encodeURIComponent(this.DisplayName));
+                            matchedSourceId = this.PmSourceId;
+                            f_setSessionStorage('matchedSourceId', this.PmSourceId);
+                        }
+                    });
+            }
+        }
+    </script>
+    
+        <script type="text/javascript">
+            var leadList = [
+                { hcLeadChannelName: "Apartment Finder", Domain: "ApartmentFinder.com"},
+                { hcLeadChannelName: "Apartment Home Living Export", Domain: "ApartmentHomeLiving.com"},
+                { hcLeadChannelName: "ApartmentGuide.com", Domain: "ApartmentGuide.com"},
+                { hcLeadChannelName: "Apartments.com Network", Domain: "Apartments.com" },
+                { hcLeadChannelName: "Rent.com", Domain: "Rent.com" },
+                { hcLeadChannelName: "ForRent.com", Domain: "ForRent.com" },
+                { hcLeadChannelName: "Move.com", Domain: "Move.com" },
+                { hcLeadChannelName: "ApartmentFinder.com", Domain: "ApartmentFinder.com" },
+                { hcLeadChannelName: "ApartmentShowcase.com", Domain: "ApartmentShowcase.com" },
+                { hcLeadChannelName: "ApartmentList.com", Domain: "ApartmentList.com" },
+                { hcLeadChannelName: "Zillow Rental Network", Domain: "zillow.com" },
+                { hcLeadChannelName: "LiveLovely.com", Domain: "LiveLovely.com" },
+                { hcLeadChannelName: "Google.com", Domain: "Google.com" },
+                { hcLeadChannelName: "MyLeasestar", Domain: "myleasestar.com" },
+                { hcLeadChannelName: "Greystar", Domain: "greystar.com" }
+            ];
+
+            $(document).ready(function () {
+                var referrerUrl = f_getSessionStorage('referrerUrl');
+                var domainUrl = document.domain.match(/[^.]+.[^.]+(?=\.*$)/).toString();
+                var referralPhoneNum = f_getSessionStorage('referralPhoneNum');
+
+                if (!referrerUrl && document.referrer) {
+                    f_setSessionStorage('referrerUrl', document.referrer);
+                    referrerUrl = document.referrer;
+                } else if (referrerUrl && referrerUrl.indexOf(domainUrl) == -1 && document.referrer && document.referrer.indexOf(domainUrl) == -1 && referrerUrl != document.referrer) {
+                    f_setSessionStorage('referrerUrl', document.referrer);
+                    referrerUrl = document.referrer;
+                }
+
+                var cid = false;
+                if (f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM'))
+                    cid = f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM').toLowerCase().indexOf('lsem') != -1;
+                var changePhoneNum = false;
+                if (!cid && !googleCallTrackingEnabled)
+                    changePhoneNum = true;
+
+                if (changePhoneNum && ((referrerUrl && referrerUrl.indexOf('http') > -1) || referralPhoneNum)) {
+                    var phoneNumberList = [];
+                    var a = document.createElement('a');
+                    a.setAttribute('href', referrerUrl);
+                    var referrerHostname = a.hostname.match(/[^.]+.[^.]+(?=\.*$)/).toString();
+
+                    if (referralPhoneNum)
+                        phoneNumberList.push(referralPhoneNum);
+                    else if (leadObj) {
+                        $(leadList).each(function(i, v) {
+                            if (v.Domain.toLowerCase().indexOf(referrerHostname.toLowerCase()) > -1) {
+                                $(leadObj).each(function() {
+                                    if (this.LeadChannelName && this.LeadChannelName.toLowerCase().indexOf(v.hcLeadChannelName.toLowerCase()) > -1) {
+                                        phoneNumberList.push(this.PhoneNumber);
+                                        sessionStorage.setItem('referralPhoneNum', this.PhoneNumber);
+                                    }
+                                });
+                            }
+                        });
+                    }
+
+                    if (phoneNumberList.length == 1) {
+                        $('.seo-number').each(function() {
+                            $(this).html(phoneNumberList[0]);
+
+                            if ($(this).attr('href') && $(this).attr('href').indexOf('tel:') > -1)
+                                $(this).attr('href', 'tel: ' + phoneNumberList[0]);
+                            if ($(this).attr('onclick') && $(this).attr('onclick').indexOf('f_analyticsSendEvent(') > -1) {
+                                $(this).attr('onclick', "f_analyticsSendEvent('general', 'click-phone-number', '" + phoneNumberList[0] + '\')');
+                            }
+                        });
+                    } else if (phoneNumberList.length == 0) {
+                        if (referrerHostname.indexOf('.') > -1)
+                            referrerHostname = referrerHostname.substring(0, referrerHostname.indexOf('.'));
+
+                        $(leadObj).each(function(i, v) {
+                            if (v.LeadChannelName && v.LeadChannelName.toLowerCase().indexOf(referrerHostname.toLowerCase()) > -1 && v.PhoneNumber != null) {
+                                phoneNumberList.push(v.PhoneNumber);
+                                sessionStorage.setItem('referralPhoneNum', this.PhoneNumber);
+                            }
+                        });
+                        if (phoneNumberList.length == 1) {
+                            $('.seo-number').each(function() {
+                                $(this).html(phoneNumberList[0]);
+                                if ($(this).attr('href') && $(this).attr('href').indexOf('tel:') > -1)
+                                    $(this).attr('href', 'tel: ' + phoneNumberList[0]);
+                                if ($(this).attr('onclick') && $(this).attr('onclick').indexOf('f_analyticsSendEvent(') > -1) {
+                                    $(this).attr('onclick', "f_analyticsSendEvent('general', 'click-phone-number', '" + phoneNumberList[0] + '\')');
+                                }
+                            });
+                        }
+                    }
+                }
+            });
+        </script>
+    <script type="text/javascript">var propertyId='5809262';var lsApi='https://c-leasestar-api.realpage.com';var cacheUrl='';</script><script type="text/javascript">var leadObj=[{"PhoneNumber":"(972) 954-1935","LeadChannelName":"Website"}];var googleCallTrackingEnabled = false;</script>
+<link rel="canonical" href="http://aurora.cms2.myleasestar.com/404.aspx" /><script type="text/javascript">dataLayer = [{'propertyId': '5809262' ,'companyId': '27967' ,'productTypeId': '6131'}];</script><link href="/CMSPages/GetResource.ashx?stylesheetfile=/CMSScripts/Custom/RPWebParts/fancybox3/jquery.fancybox.css" type="text/css" rel="stylesheet" /> 
+<script type="text/javascript">var mvTourText = ''; var mvColor = 'd59b79'; mvBtnAnimation = 'spin'</script><script type="text/javascript">var mvTours = [{"Type":"UKN","MediaId":56300281,"DisplaySequence":430,"Caption":"2 Bedroom","Src":"https://my.matterport.com/show/?m=isKMZjiLTzn","AltText":"2 Bedroom Tour Demo","TourType":"Matterport","ImgUrl":"https://capi.myleasestar.com/v2/dimg/56300280/%s/56300280.png"}]</script><script src="/CMSScripts/Custom/RPWebParts/fancybox3/jquery.fancybox.js" defer="defer" type="text/javascript"></script><script src="/CMSScripts/Custom/RPWebParts/media-viewer.js" defer="defer" type="text/javascript"></script><script src="https://uc-widget.realpageuc.com/widget?wid=Uid14aQ2DL36RhRl2tRP6K" defer="defer" type="text/javascript"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');var RpUniqueUserId = f_getAnalyticsUserValueFromCookie('RP_LSWS_USER');ga('create', 'UA-34758307-2', {'userId': RpUniqueUserId});ga('set', { 'dimension4': 5809262, 'dimension5': 27967, 'dimension9': RpUniqueUserId, 'dimension10': 's0071-aurora', 'dimension11': new Date().getTime()});ga('send', 'pageview');</script></head>
+<body class="LTR ENUS ContentBody">
+    
+    <!-- Google Tag Manager -->
+                            <noscript>
+                                <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PNG482G" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                            </noscript>
+                            <script type="text/javascript">
+                                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+                                new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+                                j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+                                "//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,"script","dataLayer","GTM-PNG482G");
+                            </script>
+                         <!-- End Google Tag Manager -->
+
+    
+
+<script type="text/javascript">
+    var displayModal = navigator.userAgent.indexOf("MSIE") >= 0;
+
+    $(document).ready(function () {
+        var cookie = f_getBrowserSessionCookie('showBrowserVersionOnPageLoad');
+
+        if (displayModal && cookie == null) {
+            $('.oB-overlay').show();
+            $('#oldBrowserModal').show();
+            f_setBrowserSessionCookie('showBrowserVersionOnPageLoad', false);
+        }
+        $('#closeBrowserModalButton').on('click', function() {
+            $('.oB-overlay').hide();
+            $('#oldBrowserModal').hide();
+        });
+    });
+
+    function f_setBrowserSessionCookie(cookieName, value) {
+        document.cookie = cookieName + "=" + value;
+    }
+
+    function f_getBrowserSessionCookie(cookieName) {
+        var cookieValue = document.cookie;
+        var cookieStart = cookieValue.indexOf(" " + cookieName + "=");
+        if (cookieStart == -1) {
+            cookieStart = cookieValue.indexOf(cookieName + "=");
+        }
+        if (cookieStart == -1) {
+            cookieValue = null;
+        }
+        else {
+            cookieStart = cookieValue.indexOf("=", cookieStart) + 1;
+            var cookieEnd = cookieValue.indexOf(";", cookieStart);
+            if (cookieEnd == -1) {
+                cookieEnd = cookieValue.length;
+            }
+            cookieValue = unescape(cookieValue.substring(cookieStart, cookieEnd));
+        }
+        return cookieValue;
+    }
+</script>
+        <style>
+        #oldBrowserModal {
+            font-family: 'Arial', sans-serif;
+        }
+        #oldBrowserModal .oB-header h4, #oldBrowserModal .oB-body p {
+            color: #666;
+            font-weight: bold;
+        }
+        #oldBrowserModal .oB-header h4 {font-size: 20px;}
+        #oldBrowserModal .oB-body p {
+            font-size: 16px;
+            padding: 0 15px 15px;
+        }
+        #oldBrowserModal .browserIconContainer {
+            width: 90px;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #oldBrowserModal .browserSelect {font-size: 14px;}
+        #oldBrowserModal #explorerTab {width: 140px;}
+        #oldBrowserModal .browserImage img {
+            height: 60px;
+            width: 60px;
+            margin-bottom:10px;
+            border: none !important;
+        }
+        #oldBrowserModal a.browserLink {
+            color: #666;
+            text-decoration: none;
+        }
+        #oldBrowserModal #closeBrowserModalButton {
+            background: #42a5f5;
+            color: #fff;
+            border: none;
+            padding: 15px 45px;
+            border-radius: 500px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #oldBrowserModal .oB-content {text-align:center;}
+        #oldBrowserModal :focus {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+        #oldBrowserModal .oB-content {border-radius: 0;}
+        .oB-overlay {
+            position: fixed;
+            z-index: 2000;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        #oldBrowserModal .oB-header {
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            padding: 15px;
+        }
+        #oldBrowserModal .oB-body {
+             padding: 15px;
+        }
+        #oldBrowserModal .oB-footer {
+            font-size: 12px;
+            padding: 15px;
+            text-align: center;
+            border: none;
+            color: #666;
+        }
+        @media (min-width: 768px) {
+            #oldBrowserModal .oB-dialog {width: 690px;}
+            #oldBrowserModal {
+                position: absolute;
+                z-index: 2001;
+                top: 10%;
+                left: 50%;
+                background: #fff;
+                transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+            }
+        }
+        @media (max-width: 767px) {
+            #oldBrowserModal {
+                position: relative;
+                z-index: 2001;
+                margin: 5% auto 5%;
+                background: #fff;
+                width: 95%;
+            }
+        }                             
+</style>
+
+	
+		<div class="oB-overlay" style="display: none;"></div>
+		<div id="oldBrowserModal" style="display: none;">
+			<div class="oB-dialog">
+				<div class="oB-content">
+					<div class="oB-header">
+						<h4>For the best website experience, please update your browser</h4>
+					</div>
+					<div class="oB-body">
+						<p>Just click on the icons to get to the download page</p>
+						<div class="browserSelect">						
+							<div class="browserIconContainer" id="firefoxTab">
+								<div class="browserColumn">
+									<a class="browserLink" href="https://www.mozilla.org/en-US/firefox/new/?v=1" target="_blank">
+										<div class="browserImage"><img src="GlobalResources/BrowserIcons/firefoxLogo.png" /></div>
+										<div class="browserName">Firefox</div>
+									</a>
+								</div>
+							</div>
+							<div class="browserIconContainer" id="chromeTab">
+								<div class="browserColumn">
+									<a class="browserLink" href="https://www.google.com/chrome/browser/desktop/" target="_blank">
+										<div class="browserImage"><img src="/GlobalResources/BrowserIcons/chromeLogo.png" /></div>
+										<div class="browserName">Chrome</div>
+									</a>
+								</div>
+							</div>
+							<div class="browserIconContainer" id="safariTab">
+								<div class="browserColumn">
+									<a class="browserLink" href="https://support.apple.com/downloads/safari" target="_blank">
+										<div class="browserImage"><img src="/GlobalResources/BrowserIcons/safariLogo.png" /></div>
+										<div class="browserName">Safari</div>
+									</a>
+								</div>
+							</div>
+                            <div class="browserIconContainer" id="explorerTab">
+								<div class="browserColumn">
+									<a class="browserLink" href="https://www.microsoft.com/en-us/download/internet-explorer.aspx" target="_blank">
+										<div class="browserImage"><img src="/GlobalResources/BrowserIcons/explorerLogo.png" /></div>
+										<div class="browserName">Internet Explorer 11</div>
+									</a>
+								</div>
+							</div>
+                            <div class="browserIconContainer" id="edgeTab">
+								<div class="browserColumn">
+									<a class="browserLink" href="https://www.microsoft.com/en-us/windows/microsoft-edge#0QiY0Omq3i5Z0krF.97" target="_blank">
+										<div class="browserImage"><img src="/GlobalResources/BrowserIcons/edgeLogo.png" /></div>
+										<div class="browserName">Edge</div>
+									</a>
+								</div>
+							</div>					
+						</div>
+					</div>
+					<button id="closeBrowserModalButton" type="button">Close Window</button>
+					<div class="oB-footer">
+						<p></p>By closing this window you acknowledge that your experience on this website may be degraded<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+    <form method="post" action="/MicrosoftAjaxSerialization.aspx" id="form">
+<div>
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTIzNzM5ODY2D2QWAgIID2QWAmYPFgIeB1Zpc2libGVoFgJmDxUBAGRkgHxeaLibLo99tx8qkoRTFbYtsbk=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=_YnDaPMy1-UwPC8JeEW6fOU3LpMFXdCNRyjuFbpE6O7FAJsUtgfTkfp7b7ida5Zyj15lRD8T8tLAT1tpSTEXoUa-c601&amp;t=635418424260000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }__doPostBack('m',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }WebForm_DoCallback('m',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="/ScriptResource.axd?d=V_SKADO14O14hgHRR1ZczB-7f0jdlX5UK_TzAwiqssqdsXLKdP8RgEzz0gt7qQxKCrXxgE2IKkO32Xia6JI59L1OltpqLAt8ErOLqkXzsyOb6fP2GOW_R49GLKnV7AMKc_VUeQ2&amp;t=3a1336b1" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=RRScsVnhNNuThT4Ry_TVhIqi0dfipEmSzDo6EAtzSqe7eR8wJ-eb2Ty7Vasq3VFfPBiMBpfOzybilBrZPcXpUC2QfmVZVoLJQzEjjODyD8mQxIxW0tnZ228nYYuP5rZ6S6bFYA2&amp;t=3a1336b1" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+<div id="CMSHeaderDiv">
+	<!-- -->
+</div>
+    <div id="ctxM">
+
+</div>
+    
+
+
+<!-- MediaViewer Added -->
+<header class="header">
+  <div class="top-spacer"></div>
+  <div class="header-contents">
+    <div id="" class="header-top-bar"><div class="container">
+	<div class="row"><div id="" class="top-address top-link"><a href="http://maps.google.com/?q=555 Ross Avenue, Dallas, TX 75201" target="_blank">
+  <em class="icon-pin hidden-lg"></em>
+  <span class="hidden-sm hidden-xs hidden-md">555 Ross Avenue, Dallas, TX 75201</span>
+  <span class="hidden-lg">Directions</span>
+</a></div><div id="" class="top-CTA1 top-link"><a href="/contact.aspx" target="_self" class="hidden-xs">
+  <span class="hidden-lg"><em class="icon-handshake"></em></span>
+  Schedule Tour
+</a></div><div id="" class="header-chat top-link hidden-md hidden-sm hidden-xs"><div id="p_lt_zoneHeaderTop_LiveChatV1_pnlLiveChat" class="live-chat-container">
+	
+    <style>a#_lpChatBtn {cursor: pointer;}</style>
+<a id="_lpChatBtn" onclick="javascript:window.rpuc.showCommunicationWidget()">Live Chat</a>
+</div></div><div id="" class="top-CTA2 top-link"><a href="/residents.aspx" target="_self" class="hidden-xs">
+  <span class="hidden-lg"><em class="icon-user-1"></em></span>
+  Resident Login
+</a></div><div id="" class="header-phone top-link">
+<a class="seo-number" href="tel:(972) 954-1935" onclick="f_analyticsSendEvent('general', 'click-phone-number', '(972) 954-1935')">(972) 954-1935</a></div></div></div></div>
+    <div id="" class="main-menu-container"><div id="menu-flyout">
+  <div class="menu-flyout-container">
+    <div class="menu-left">
+      <div class="cta-button close-button">
+        <a type="button" data-toggle="toggle" data-target=".main-menu-container">Close<em class="fa fa-times" aria-hidden="true"></em></a>
+      </div>
+	<ul id="menuElem">
+		<li style=""><a href="/Home.aspx" style="">Home</a></li>
+		<li class="floor-plans" style=""><a href="/Floor-plans.aspx" style="">Floor plans</a></li>
+		<li class="features" style=""><a href="/Features.aspx" style="">Features</a></li>
+		<li class="gallery" style=""><a href="/Gallery.aspx" style="">Gallery</a></li>
+		<li class="location" style=""><a href="/Location.aspx" style="">Location</a></li>
+		<li class="residents" style=""><a href="/Residents.aspx" style="">Residents</a></li>
+		<li class="contact" style=""><a href="/Contact.aspx" style="">Contact Us</a></li>
+	</ul>
+
+      <div class="menu-CTAs"><div class="cta-button">
+  <a href="/neighborhood.aspx" target="_self">
+    Area Attractions
+    <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+  </a>
+</div><div class="cta-button">
+  <a href="/contact.aspx" target="_self">
+    Schedule A Tour
+    <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+  </a>
+</div></div>
+    </div>
+    <div class="menu-right"></div>
+    <div class="clear"></div>
+  </div>
+</div></div>
+    <div id="specials-flyout" class="collapse">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h4 class="specials-header"></h4>
+        
+      </div>
+      <div id="specials-button-column" class="col-sm-4">
+        <div class="cta-button">
+          <a>
+            
+            <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="" class="header-main"><div class="container"><div id="" class="menu-button"><a type="button" data-toggle="toggle" data-target=".main-menu-container"><em class="fa fa-bars" aria-hidden="true"></em><span class="hidden-xs">MENU</span></a></div><div id="" class="header-FP-Link"><a href="/floor-plans.aspx"><span class="hidden-xs">FLOOR PLANS</span><em class="icon-blueprint"></em></a></div><div id="propertyLogo" class=""><a href="http://aurora.cms.myleasestar.com"><img id="p_lt_zoneHeaderMain_EditableImage_ucEditableImage_imgImage" src="https://capi.myleasestar.com/v2/dimg-crop/51691121/0x150/51691121.png" alt="" style="border-width:0px;" />
+
+</a></div></div></div>
+  </div>
+</header>
+<div id="" class="page-placeholder-container"><div class="header-spacer"></div>
+
+
+
+
+
+<div class="page_hidden" onselectstart="return false">
+  <div class="container inner-page-top">
+    <h1 class="page-title">
+	</h1>
+
+
+
+
+
+  </div>
+  <div class="inner-page-background">
+    <div class="inner-page-background-overlay"></div>
+    <div class="container">
+      <div class="inner-content-shadow">
+        <div class="inner-content hidden-main">
+          <div id="content404" class="content404"><div>
+	</div>
+<div>
+	<a href="/">Click here to Visit our home page.</a></div>
+
+
+
+
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var clickToPopUp = document.getElementById('p_lt_zonePagePlaceholder_rpWebpart_PopUp_ClickToPopUp');
+        var disableOnMobile = 'False';
+        var isSmallScreenDevice = $(window).width() <= 500;
+
+        var cookie = f_getSessionCookie('showOnPageLoad');
+        var endDate = '';
+        var convertedEndDate = new Date(endDate + " 23:59:59");
+        var today = new Date();
+        if (window.location.pathname.toLocaleLowerCase().indexOf("home") > -1 || window.location.pathname.length < 2) {
+            if (!endDate || convertedEndDate > today) {
+                if (!cookie || 'True'.toLowerCase() == 'true') {
+                    if (('True'.toLowerCase() == 'true' || 'True'.toLowerCase() == 'true') && ((disableOnMobile.toLowerCase() == 'false' || !isSmallScreenDevice)))
+                        f_showDialog(true);
+                    f_setSessionCookie('showOnPageLoad', false);
+                }
+            }
+        }
+
+        $('.clickToPopUp').click(function () {
+            f_showDialog(true);
+        });
+
+        if ('' && !isSmallScreenDevice) {
+            $('.popUpWindowDialog').css('width', 640);
+        } else if (isSmallScreenDevice)
+            $('.popUpWindowDialog').addClass('imageOverride');
+    });
+
+    function f_setSessionCookie(cookieName, value) {
+        document.cookie = cookieName + "=" + value;
+    }
+
+    function f_getSessionCookie(cookieName) {
+        var cookieValue = document.cookie;
+        var cookieStart = cookieValue.indexOf(" " + cookieName + "=");
+        if (cookieStart == -1) {
+            cookieStart = cookieValue.indexOf(cookieName + "=");
+        }
+        if (cookieStart == -1) {
+            cookieValue = null;
+        }
+        else {
+            cookieStart = cookieValue.indexOf("=", cookieStart) + 1;
+            var cookieEnd = cookieValue.indexOf(";", cookieStart);
+            if (cookieEnd == -1) {
+                cookieEnd = cookieValue.length;
+            }
+            cookieValue = unescape(cookieValue.substring(cookieStart, cookieEnd));
+        }
+        return cookieValue;
+    }
+
+    function f_showDialog(modal) {
+        if ($('#popUpWindowDialog').length > 0) {
+            $("#popup-overlay").show();
+            $(".popUpWindowLightBox").fadeIn(300);
+            if (modal) {
+                $("#popup-overlay").unbind("click");
+            } else {
+                $("#popup-overlay").click(function () {
+                    f_hideDialog();
+                });
+            }
+        }
+    }
+
+    function f_hideDialog() {
+        $("#popup-overlay").hide();
+        $(".popUpWindowLightBox").fadeOut(300);
+    }
+
+</script>
+
+<div id="popup-overlay" class="popup-overlay"></div>
+<div id="p_lt_zonePagePlaceholder_rpWebpart_PopUp_PopUpWindow" class="popUpWindowLightBox">
+
+</div>
+<div id="p_lt_zonePagePlaceholder_rpWebpart_PopUp_ClickToPopUp" class="clickToPopUp">
+
+</div>
+
+
+
+</div>
+<footer class="spacer clear">
+  <div class="container">
+    <div class="row">
+      <div id="" class="col-md-3 col-sm-12"><div id="footerLogo1" class="footer-logo"><a href="http://aurora.cms.myleasestar.com"><img id="p_lt_zoneFooter1_EditableImage2_ucEditableImage_imgImage" title="https://capi.myleasestar.com/v2/dimg/51691121/%s/51691121.png" src="https://capi.myleasestar.com/v2/dimg/51691121/235x125/51691121.png" alt="https://capi.myleasestar.com/v2/dimg/51691121/%s/51691121.png" style="border-width:0px;" />
+
+</a></div><div id="footerLogo2" class="footer-logo"><a><img id="p_lt_zoneFooter1_EditableImage3_ucEditableImage_imgImage" src="https://capi.myleasestar.com/v2/dimg/37053242/235x125/37053242.png" alt="" style="border-width:0px;" />
+
+</a></div></div>
+      <div id="" class="col-md-3 col-sm-5"><h5>Office Hours</h5>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var useTooltipLayout = 'full-list'.toLowerCase();
+        var hideOfficeHoursInLabel = 'False'.toLowerCase() == 'true';
+
+        if (useTooltipLayout == 'full-list') {
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-container-u').addClass('full-list');
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').show();
+
+        } else if (useTooltipLayout == 'no-tooltip') {
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-container-u').addClass('no-tooltip');
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').click(function () {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').slideToggle();
+            });
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-list-u li').click(function () {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').hide("slow");
+            });
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-u').html('');
+
+        } else if (screen.width > 500) {
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').hover(function() {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').show();
+                var topLocation = parseInt(document.getElementById("p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u").getBoundingClientRect().top) - parseInt($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').outerHeight()) - 10;
+                var leftLocation;
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
+
+                if ($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').offset().left > (screenWidth / 2)) {
+                    leftLocation = parseInt($('#p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u').offset().left) - 50;
+                    $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').addClass('right');
+                } else
+                    leftLocation = parseInt($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').offset().left);
+
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').css({ top: topLocation + 'px', left: leftLocation + 'px' });
+            });
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').mouseout(function() {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').hide();
+            });
+        } else {
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').click(function (e) {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').show();
+                var topLocation = parseInt(document.getElementById("p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u").getBoundingClientRect().top) - parseInt($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').outerHeight()) - 10;
+                var leftLocation;
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
+
+                if ($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').offset().left > (screenWidth / 2)) {
+                    leftLocation = parseInt($('#p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u').offset().left) - 50;
+                    $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').addClass('right');
+                } else
+                    leftLocation = parseInt($('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').offset().left);
+
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').css({ top: topLocation + 'px', left: leftLocation + 'px' });
+                $('.oh-overlay').show();
+            });
+
+            $('.oh-overlay').click(function() {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').hide();
+                $('.oh-overlay').hide();
+                return false;
+            });
+
+            $('.oh-button-close').click(function () {
+                $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u').hide();
+                $('.oh-overlay').hide();
+                return false;
+            });
+        }
+
+        var date = new Date();
+        var today = date.getDay();
+        var todayFull = '';
+
+        switch(today) {
+        case 0:
+            todayFull = 'Sunday';
+            break;
+        case 1:
+            todayFull = 'Monday';
+            break;
+        case 2:
+            todayFull = 'Tuesday';
+            break;
+        case 3:
+            todayFull = 'Wednesday';
+            break;
+        case 4:
+            todayFull = 'Thursday';
+            break;
+        case 5:
+            todayFull = 'Friday';
+            break;
+        case 6:
+            todayFull = 'Saturday';
+            break;
+        }
+
+        var todaysHours = '';
+        $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-list-u li').each(function (i, v) {
+            if ($(v).html().toLowerCase().indexOf(todayFull.toLowerCase()) > -1) {
+                $(v).css('font-weight', 'bold');
+                todaysHours = $(v).html().substring($(v).html().indexOf(': ') + 2);
+            }
+        });
+        if (hideOfficeHoursInLabel)
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').html("Office Hours");
+        else
+            $('.p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u').html("Today's Hours: " + todaysHours);
+    });
+</script>
+
+<div class="oh-overlay" style=""></div>
+<div class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-container-u office-hours-container">
+    <a id="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u" class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u oh-link-c"></a>
+    <div class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u office-hours-modal-container" style="display:none;">
+        <div class="oh-header">
+            <div class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-u oh">Office Hours:</div>
+            <div class="oh-button-close">&times;</div>
+        </div>
+        <div id="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours" class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-list-container-u">
+	<ul class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-list-u office-hours-list"><li>Monday: 9:00AM to 6:00PM</li><li>Tuesday: 9:00AM to 6:00PM</li><li>Wednesday: 9:00AM to 6:00PM</li><li>Thursday: 9:00AM to 6:00PM</li><li>Friday: 9:00AM to 6:00PM</li><li>Saturday: 10:00AM to 5:00PM</li><li>Sunday: 1:00PM to 5:00PM</li></ul>
+</div>
+    </div>
+</div></div>
+      <div id="" class="col-md-2 col-sm-2"><h5>Links</h5>
+<ul id="menuElem">
+  <li class="site-map">
+    <a href="/site-map.aspx">Site Map</a>
+  </li>
+  <li class="privacy">
+    <a href="/privacy-policy.aspx">Privacy Policy</a>
+  </li>
+  <li>
+    <a href="/Residents.aspx" class="residents" target="_blank">Residents</a>
+  </li></ul></div>
+      <div id="" class="col-md-4 col-sm-5"><h5>Follow Us On</h5><div id="p_lt_zoneFooter4_rpWebpartSocialMedia_pnlSocialNetworks" class="social_media">
+	<a href="http://www.facebook.com" class="facebook" title="" target="_blank" onclick="f_analyticsSendEvent('social', 'click-facebook-icon', 'http://www.facebook.com')" role="button" aria-label="facebook">
+                    <em class="sicon-facebook" aria-hidden="true"></em></a><a href="http://www.instagram.com" class="instagram" title="" target="_blank" onclick="f_analyticsSendEvent('social', 'click-instagram-icon', 'http://www.instagram.com')" role="button" aria-label="instagram">
+                    <em class="sicon-instagram" aria-hidden="true"></em></a><a href="http://www.google.com" class="google" title="" target="_blank" onclick="f_analyticsSendEvent('social', 'click-google-icon', 'http://www.google.com')" role="button" aria-label="google">
+                    <em class="sicon-google" aria-hidden="true"></em></a>
+</div><div id="" class="footerCopyright">Copyright &copy; 2018 Aurora</div><div class="footer-icons">
+  <div class="footer-icons-left"><div class="rplogo" id="rplogo"><a href="https://www.realpage.com/apartment-marketing/" target="_blank"><img src="/TemplateResources/Global/images/rplogo-white.png" alt="RealPage, Inc." /></a></div></div><div id="ADA-HUD-Links"><a id="link-HUD" href="https://www.hud.gov/program_offices/fair_housing_equal_opp" target="_blank">Rental assistance website (opens in a new tab)<svg id="housingSVG" data-name="housingSVG" xmlns="http://www.w3.org/2000/svg" width="539.2" height="515.23" viewbox="0 0 539.2 515.23">
+  <title>equal-housing-opportunity</title>
+  <g>
+    <polygon points="61.89 421.07 40.79 421.07 40.79 429.43 60.17 429.43 60.17 436.48 40.79 436.48 40.79 446.74 62.82 446.74 62.82 453.79 32.66 453.79 32.66 414.04 61.89 414.04 61.89 421.07 61.89 421.07" fill-rule="evenodd" />
+    <path d="M202.69,476.83l4,3.75a9.67,9.67,0,0,1-4.48,1.06c-4.49,0-10.8-2.76-10.8-13.89s6.32-13.89,10.8-13.89S213,456.64,213,467.76a17.78,17.78,0,0,1-1.82,8.54L207,472.37l-4.26,4.46ZM221.46,486l-4.33-4.07c2.44-3.1,4.16-7.64,4.16-14.18,0-18.65-13.84-20.92-19.1-20.92s-19.09,2.26-19.09,20.92,13.84,20.92,19.09,20.92A20.52,20.52,0,0,0,212.37,486l4.71,4.49,4.37-4.49Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M260.37,473.75c0,10.44-6.32,14.94-16.34,14.94-3.65,0-9.07-.88-12.62-4.81-2.15-2.42-3-5.66-3.09-9.63V447.89h8.47v25.78c0,5.56,3.21,8,7.08,8,5.71,0,8-2.76,8-7.59V447.89h8.48v25.85Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M282.61,456.86h.12l4.92,15.72H277.51l5.1-15.72Zm-7.32,22.56H290l2.55,8.21h9l-14-39.75H278l-14.17,39.75h8.75l2.76-8.21Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <polygon points="202.19 446.59 221.95 446.59 221.95 453.79 193.88 453.79 193.88 414.04 202.19 414.04 202.19 446.59 202.19 446.59" fill-rule="evenodd" />
+    <polygon points="253.44 435.95 253.44 453.79 245.15 453.79 245.15 414.04 253.44 414.04 253.44 429.09 268.94 429.09 268.94 414.04 277.23 414.04 277.23 453.79 268.94 453.79 268.94 435.95 253.44 435.95 253.44 435.95" fill-rule="evenodd" />
+    <path d="M407.18,467.76c0-11.12,6.32-13.89,10.79-13.89s10.81,2.76,10.81,13.89-6.31,13.89-10.81,13.89-10.79-2.76-10.79-13.89Zm-8.29,0c0,18.66,13.85,20.92,19.08,20.92s19.12-2.26,19.12-20.92S423.25,446.85,418,446.85s-19.08,2.26-19.08,20.92Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M476.72,473.75c0,10.44-6.32,14.94-16.34,14.94-3.65,0-9.06-.88-12.62-4.81-2.16-2.42-3-5.66-3.09-9.63V447.89h8.46v25.78c0,5.56,3.22,8,7.1,8,5.7,0,8-2.76,8-7.59V447.89h8.47v25.85Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M491.92,475.4c.07,2.21,1.19,6.42,8.43,6.42,3.93,0,8.31-.94,8.31-5.17,0-3.08-3-3.92-7.19-4.92l-4.27-1c-6.44-1.49-12.64-2.91-12.64-11.66,0-4.43,2.39-12.24,15.29-12.24,12.18,0,15.45,8,15.51,12.84h-8c-.22-1.76-.88-6-8.13-6-3.15,0-6.92,1.16-6.92,4.76,0,3.12,2.55,3.75,4.2,4.14l9.69,2.38c5.43,1.33,10.4,3.55,10.4,10.68,0,12-12.17,13-15.66,13-14.49,0-17-8.36-17-13.28Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <polygon points="417.6 453.79 409.32 453.79 409.32 414.04 417.6 414.04 417.6 453.79 417.6 453.79" fill-rule="evenodd" />
+    <polygon points="450.76 414.04 458.5 414.04 458.5 453.79 450.21 453.79 434 425.44 433.86 425.44 433.86 453.79 426.13 453.79 426.13 414.04 434.87 414.04 450.63 441.72 450.76 441.72 450.76 414.04 450.76 414.04" fill-rule="evenodd" />
+    <path d="M600.42,466.22H617v21.42h-5.53l-.83-5c-2.1,2.41-5.14,6-12.4,6-9.57,0-18.25-6.86-18.25-20.8,0-10.84,6-21.09,19.42-21,12.2,0,17,7.9,17.43,13.4h-8.29c0-1.56-2.83-6.54-8.69-6.54S588.46,457.8,588.46,468c0,10.86,5.93,13.67,11.57,13.67,1.82,0,7.93-.71,9.63-8.75h-9.24v-6.69Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M153.32,528.15c0-11.12,6.31-13.9,10.79-13.9s10.79,2.77,10.79,13.9-6.31,13.9-10.79,13.9-10.79-2.79-10.79-13.9Zm-8.3,0c0,18.65,13.84,20.94,19.09,20.94s19.09-2.29,19.09-20.94-13.84-20.92-19.09-20.92S145,509.49,145,528.15Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M206,526.81V515.12h6.59c5.14,0,7.3,1.62,7.3,5.5,0,1.77,0,6.19-6.21,6.19Zm0,6.87h9.51c10.69,0,12.67-9.08,12.67-12.67,0-7.8-4.64-12.73-12.34-12.73H197.66V548H206V533.68Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M250.67,526.81V515.12h6.58c5.15,0,7.31,1.62,7.31,5.5,0,1.77,0,6.19-6.19,6.19Zm0,6.87h9.52c10.68,0,12.68-9.08,12.68-12.67,0-7.8-4.64-12.73-12.34-12.73H242.37V548h8.31V533.68Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M293.63,528.15c0-11.12,6.29-13.9,10.8-13.9s10.79,2.77,10.79,13.9-6.32,13.9-10.79,13.9-10.8-2.79-10.8-13.9Zm-8.3,0c0,18.65,13.83,20.94,19.1,20.94s19.08-2.29,19.08-20.94-13.84-20.92-19.08-20.92-19.1,2.26-19.1,20.92Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <path d="M346.1,525.77V515.12h10.34c4.87,0,5.8,3.12,5.8,5.22,0,3.93-2.09,5.43-6.41,5.43ZM337.95,548h8.16V532.46h8.56c6.15,0,6.49,2.1,6.49,7.53a26.77,26.77,0,0,0,.87,8h9.2v-1.07c-1.77-.65-1.77-2.1-1.77-7.89,0-7.45-1.77-8.65-5-10.09,3.93-1.32,6.13-5.09,6.13-9.45,0-3.44-1.93-11.24-12.5-11.24H337.95V548Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <polygon points="287.36 514.17 279.06 514.17 279.06 481.46 267.05 481.46 267.05 474.42 299.38 474.42 299.38 481.46 287.36 481.46 287.36 514.17 287.36 514.17" fill-rule="evenodd" />
+    <path d="M458.06,534.11c0,10.46-6.31,15-16.33,15-3.64,0-9.06-.92-12.61-4.85-2.16-2.42-3-5.64-3.09-9.62V508.28h8.46v25.78c0,5.54,3.22,8,7.09,8,5.7,0,8-2.79,8-7.6V508.28h8.47v25.84Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <polygon points="384.11 474.42 391.87 474.42 391.87 514.17 383.55 514.17 367.33 485.82 367.25 485.82 367.25 514.17 359.48 514.17 359.48 474.42 368.22 474.42 384.01 502.1 384.11 502.1 384.11 474.42 384.11 474.42" fill-rule="evenodd" />
+    <polygon points="415.29 514.17 406.97 514.17 406.97 474.42 415.29 474.42 415.29 514.17 415.29 514.17" fill-rule="evenodd" />
+    <polygon points="447.7 514.17 439.4 514.17 439.4 481.46 427.41 481.46 427.41 474.42 459.72 474.42 459.72 481.46 447.7 481.46 447.7 514.17 447.7 514.17" fill-rule="evenodd" />
+    <polygon points="491.11 514.17 482.8 514.17 482.8 499.16 469.08 474.42 478.87 474.42 487.12 491.7 494.99 474.42 504.39 474.42 491.11 499.27 491.11 514.17 491.11 514.17" fill-rule="evenodd" />
+    <path d="M381.73,33.85l-267.6,131.8v61.91h30V413.27H617.36V227.56h36V165.65L381.73,33.85ZM559.46,357.34H202V187.62L381.73,95.76l177.73,91.86V357.34Z" transform="translate(-114.13 -33.85)" fill-rule="evenodd" />
+    <polygon points="349.46 213.66 183.73 213.66 183.73 153.77 349.46 153.77 349.46 213.66 349.46 213.66" fill-rule="evenodd" />
+    <polygon points="349.46 299.57 183.73 299.57 183.73 239.63 349.46 239.63 349.46 299.57 349.46 299.57" fill-rule="evenodd" />
+  </ g >
+</ svg >
+
+</polygon></polygon></path></polygon></polygon></polygon></polygon></path></polygon></path></path></path></path></path></path></polygon></polygon></path></path></path></polygon></polygon></path></path></path></polygon></g></svg></a><a id="link-ADA" href="https://www.hud.gov/program_offices/fair_housing_equal_opp/disabilities/accessibilityR" target="_blank">Information for disabled persons website (opens in a new tab)<svg id="handicapSVG" data-name="handicapSVG" xmlns="http://www.w3.org/2000/svg" width="483.22" height="551.43" viewbox="0 0 483.22 551.43">
+  <title>handicap</title>
+  <path d="M-54,93.12c25-2.3,44.36-23.81,44.36-49A49.25,49.25,0,0,0-58.81-5,49.25,49.25,0,0,0-108,44.16,51.06,51.06,0,0,0-101.83,68l17.52,246.47,180.4,0,74,173.37,97.14-38.1-15-35.82-54.37,19.63L126.22,268.28-41.51,269.4l-2.3-31.21,121.42,0V192.06l-126.05,0ZM127.42,446.59C97,506.78,33.25,546.43-34.73,546.43-134.57,546.43-216,465-216,365.16c0-70.1,42.49-135.24,105.88-164.12l4.1,53.54c-37.5,23.63-60.61,66.26-60.61,111,0,72.43,59.07,131.5,131.5,131.5,66.26,0,122.76-50.85,130.47-116.09Z" transform="translate(216 5)" />
+</ svg >
+                    </path></svg></a></div></div></div>
+    </div>
+  </div>
+</footer>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+WebForm_InitCallback();//]]>
+</script>
+</form>
+    
+                        <script src="//cmsadmin.myleasestar.com/sitetracker.aspx?platform=cms2&SiteId=5809262&template=S0071-Aurora" type="text/javascript">
+                            </script>
+
+    
+    
+    <script type="text/javascript">
+        try {
+            $(document).foundation();
+        }
+        catch(err) {}
+    </script>
+    
+</body>
+</html>

@@ -17,7 +17,7 @@
       <file leaf-file-name="RPcssMaster_S0071-Auroradae6.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aurora.cms.myleasestar.com/CMSPages/RPcssMaster_S0071-Auroradae6.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="268">
               <caret line="154" column="14" lean-forward="true" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
             </state>
           </provider>
@@ -171,14 +171,14 @@
       <find>favi</find>
       <find>before</find>
       <find>tab-parking-details</find>
-      <find />
+      <find>0px</find>
       <find>fonte</find>
     </findStrings>
     <replaceStrings>
       <replace>===</replace>
       <replace>bgimages</replace>
       <replace>!==</replace>
-      <replace />
+      <replace>===</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -309,12 +309,12 @@
       <workItem from="1521570995565" duration="3166000" />
       <workItem from="1525694562407" duration="38825000" />
       <workItem from="1525805860819" duration="218000" />
-      <workItem from="1525846246518" duration="21698000" />
+      <workItem from="1525846246518" duration="22287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71036000" />
+    <option name="totallyTimeSpent" value="71625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -716,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aurora.cms.myleasestar.com/CMSPages/RPcssMaster_S0071-Auroradae6.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
+        <state relative-caret-position="268">
           <caret line="154" column="14" lean-forward="true" selection-start-line="154" selection-start-column="14" selection-end-line="154" selection-end-column="14" />
         </state>
       </provider>

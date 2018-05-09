@@ -1,0 +1,1297 @@
+<!DOCTYPE>
+<html>
+<head id="head">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <link type="text/css" rel="stylesheet" href="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/ui-lightness/jquery-ui.css"/>
+  <link href="CMSPages/RPcssMaster_S0071-Auroradae6.css?stylesheetname=RPcssMaster_S0071-Aurora" type="text/css"rel="stylesheet"/>
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+  <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="CMSScripts/Custom/RPWebParts/global.min.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="geo.position" content="32.7811883;-96.8080846"/>
+  <meta name="geo.placename" content="Dallas"/>
+  <meta name="geo.region" content="US-TX"/>
+  <meta name="ICBM" content="32.7811883, -96.8080846"/>
+  <link type="text/css" href="TemplateResources/Global/Icons/font-awesome.min.css" rel="stylesheet"/>
+  <link type="text/css" href="TemplateResources/Global/Icons/fontello.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="GlobalResources/Bootstrap/css/bootstrap.min.css"/>
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+  <script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+  <script src="../code.jquery.com/jquery-migrate-1.4.1.js" type="text/javascript"></script>
+  <script src="GlobalResources/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+
+          $('#menuElem li.residents a').attr('target', '_blank');
+
+          sizeSpecials();
+
+          $("[data-toggle='toggle']").click(function () {
+              let selector = $(this).data("target");
+              $(selector).toggleClass('in');
+              let selectorClass = $(selector).hasClass('in');
+          });
+
+          let height = $(window).scrollTop();
+
+          $(window).scroll(function () {
+              let height = $(window).scrollTop();
+              let width = $(window).width();
+              if (height === 0) {
+                  $('.header').removeClass('narrow');
+                  $("#scroll-down").removeClass('faded');
+              }
+              if (height > 0) {
+                  $('.header').addClass('narrow');
+                  $("#scroll-down").addClass('faded');
+              }
+          });
+
+          $("#scroll-down").click(function () {
+              let width = $(window).width();
+              $("#scroll-down").addClass('faded');
+              if (width > 1199) {
+                  let homeScrollPoint = $(".home-section2").offset().top - 218;
+              }
+              else {
+                  let homeScrollPoint = $(".home-section2").offset().top - 238;
+              }
+              $('html, body').animate({
+                  scrollTop: homeScrollPoint
+              }, 1500, 'easeOutExpo');
+          });
+
+          function sizeSpecials() {
+              let winHeight = $(window).height();
+              let headerHeight = $('.header-top-bar').outerHeight();
+              let specialsHeight = winHeight - headerHeight;
+              $('#specials-flyout').css('max-height', specialsHeight + 'px');
+          }
+
+          $(window).resize(function () {
+              sizeSpecials();
+          });
+
+          let hideSocialCTA = 'Availability';
+          if (hideSocialCTA !== "") {
+              $('#section4-left-panel a.home-cta-button').css('display', 'inline-block');
+          }
+
+      });
+  </script>
+  <script src="RPresourceFiles/misc/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="RPresourceFiles/misc/jquery.mousewheel.min.js" type="text/javascript"></script>
+  <style type="text/css">
+    .dvAmtImg {
+      border: 1px solid #B56209;
+    }
+
+    .featured-amenities-wrapper {
+      padding-top: 20px;
+    }
+
+    .featured-amenities {
+      min-height: 254px;
+      border: 1px solid #B56209;
+    }
+
+    .amenities-wrapper {
+      min-height: 350px;
+    }
+
+    #AmenitiesContent {
+      clear: both;
+      padding: 20px 0 0;
+    }
+
+    #AmenitiesContent li {
+      margin: 0 0 0 15px;
+    }
+
+    #AmenitiesContent h3 {
+      margin: 10px 0;
+    }
+  </style>
+  <noscript>
+    <style type="text/css">
+      #mcs_container .customScrollBox {
+        overflow: auto;
+      }
+
+      #mcs_container .dragger_container {
+        display: none;
+      }
+
+       #oldBrowserModal {
+         font-family: 'Arial', sans-serif;
+       }
+
+      #oldBrowserModal .oB-header h4, #oldBrowserModal .oB-body p {
+        color: #666;
+        font-weight: bold;
+      }
+
+      #oldBrowserModal .oB-header h4 {
+        font-size: 20px;
+      }
+
+      #oldBrowserModal .oB-body p {
+        font-size: 16px;
+        padding: 0 15px 15px;
+      }
+
+      #oldBrowserModal .browserIconContainer {
+        width: 90px;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      #oldBrowserModal .browserSelect {
+        font-size: 14px;
+      }
+
+      #oldBrowserModal #explorerTab {
+        width: 140px;
+      }
+
+      #oldBrowserModal .browserImage img {
+        height: 60px;
+        width: 60px;
+        margin-bottom: 10px;
+        border: none !important;
+      }
+
+      #oldBrowserModal a.browserLink {
+        color: #666;
+        text-decoration: none;
+      }
+
+      #oldBrowserModal #closeBrowserModalButton {
+        background: #42a5f5;
+        color: #fff;
+        border: none;
+        padding: 15px 45px;
+        border-radius: 500px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #oldBrowserModal .oB-content {
+        text-align: center;
+      }
+
+      #oldBrowserModal :focus {
+        outline: -webkit-focus-ring-color auto 0;
+      }
+
+      #oldBrowserModal .oB-content {
+        border-radius: 0;
+      }
+
+      .oB-overlay {
+        position: fixed;
+        z-index: 2000;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      #oldBrowserModal .oB-header {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: 15px;
+      }
+
+      #oldBrowserModal .oB-body {
+        padding: 15px;
+      }
+
+      #oldBrowserModal .oB-footer {
+        font-size: 12px;
+        padding: 15px;
+        text-align: center;
+        border: none;
+        color: #666;
+      }
+
+      @media (min-width: 768px) {
+        #oldBrowserModal .oB-dialog {
+          width: 690px;
+        }
+
+        #oldBrowserModal {
+          position: absolute;
+          z-index: 2001;
+          top: 10%;
+          left: 50%;
+          background: #fff;
+          transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+        }
+      }
+
+      @media (max-width: 767px) {
+        #oldBrowserModal {
+          position: relative;
+          z-index: 2001;
+          margin: 5% auto 5%;
+          background: #fff;
+          width: 95%;
+        }
+      }
+
+    </style>
+  </noscript>
+  <script type="text/javascript">
+      /*$(window).load(function() {
+        let wW = $(window).width();
+        let domH = '';
+        let backgroundImage = 'background-image: ';
+        let backgroundSize = 'background-size: ';
+        let newW = 0;
+        let newH = 0;
+
+        console.log('window width: ' + wW);
+        let amenitiesImageContainer = $("div.dvAmenityZone div div.amenities-wrapper div.dvAmtImg");
+        let aicW = amenitiesImageContainer.width();
+        let aicH = amenitiesImageContainer.height();
+
+        let amenitiesImage = $("div.dvAmenityZone div div.amenities-wrapper div.dvAmtImg img");
+        let imageSRC = amenitiesImage.attr('src');
+
+        let originalImage = new Image();
+        originalImage.src = imageSRC;
+        let oiW = originalImage.width;
+        let oiH = originalImage.height;
+
+        if(oiW >= oiH) {
+          if(aicW >= aicH) {
+            newW = aicW;
+            newH = Math.round(aicW * (oiH/oiW));
+            if(newH <= aicH) {
+              newH = aicH;
+              newW = Math.round(newH * (oiW/oiH));
+            }
+            if(wW <= 480) { domH = 'height: ' + newH + 'px; '; }
+          } else {
+            newW = Math.round(aicH * (oiW/oiH));
+            newH = aicH;
+          }
+        } else {
+          newW = (aicW >= aicH) ? aicW : Math.round(aicH * (oiW/oiH));
+          newH = (aicW >= aicH) ? Math.round(aicW * (oiH/oiW)) : aicH;
+        }
+
+        backgroundImage += 'url("' + amenitiesImage.attr('src') + '");';
+        backgroundSize += newW + 'px ' + newH  + 'px;';
+        amenitiesImageContainer.attr('style', domH + backgroundImage + ' ' + backgroundSize);
+      });*/
+  </script>
+  <link href="finale.png" type="image/x-icon" rel="shortcut icon"/>
+  <link href="finale.png" type="image/x-icon" rel="icon"/>
+  <link href="CmsPages/components6e4c.css?stylesheetname=rpWebpartCss_MediaViewer;rpWebpartCss_ImageWithPins;rpWebpartCss_AmenitiesTabbedStandard;RpWebpartCss_PopUp;rpWebpartCss_OfficeHours;rpWebpartCss_RealPageLogo;rpWebpartCss_AdaHudicons" type="text/css" rel="stylesheet"/>
+  <script type="text/javascript">
+      let sourcesList = JSON.parse('[{"DisplayName":"Apartment Finder Blue Book","PmSourceId":"S000000033"},{"DisplayName":"Apartment Guide","PmSourceId":"S000000036"},{"DisplayName":"Apartment Map","PmSourceId":"S000000034"},{"DisplayName":"ApartmentFinder.com","PmSourceId":"S000000041"},{"DisplayName":"ApartmentGuide.com","PmSourceId":"S000000003"},{"DisplayName":"Apartmentlinks.com","PmSourceId":"S000000011"},{"DisplayName":"ApartmentMatching.com","PmSourceId":"S000000004"},{"DisplayName":"ApartmentRatings.com","PmSourceId":"S000000042"},{"DisplayName":"Apartments.com","PmSourceId":"S000000005"},{"DisplayName":"ApartmentsNationwide.com","PmSourceId":"S000000006"},{"DisplayName":"ApartmentsPlus.com","PmSourceId":"S000000050"},{"DisplayName":"Billboard","PmSourceId":"S000000019"},{"DisplayName":"Brochure/Flyer","PmSourceId":"S000000020"},{"DisplayName":"CitySearch.com","PmSourceId":"S000000043"},{"DisplayName":"CraigsList.com","PmSourceId":"S000000044"},{"DisplayName":"Current resident","PmSourceId":"S000000027"},{"DisplayName":"Drive by","PmSourceId":"S000000021"},{"DisplayName":"EasyRent.com","PmSourceId":"S000000007"},{"DisplayName":"For Rent Magazine","PmSourceId":"S000000035"},{"DisplayName":"ForRent.com","PmSourceId":"S000000008"},{"DisplayName":"Google.com","PmSourceId":"S000000040"},{"DisplayName":"LivingChoices.com","PmSourceId":"S000000002"},{"DisplayName":"Local Line Rollover","PmSourceId":"S000000069"},{"DisplayName":"Local Newspaper","PmSourceId":"S000000016"},{"DisplayName":"Local Newspaper II","PmSourceId":"S000000017"},{"DisplayName":"Locator Service","PmSourceId":"S000000015"},{"DisplayName":"Move.com","PmSourceId":"S000000049"},{"DisplayName":"MoveForFree.com","PmSourceId":"S000000045"},{"DisplayName":"MyNewPlace.com","PmSourceId":"S000000039"},{"DisplayName":"National Newspaper","PmSourceId":"S000000018"},{"DisplayName":"Other","PmSourceId":"S000000026"},{"DisplayName":"Other OneSite property","PmSourceId":"S000000031"},{"DisplayName":"Other property","PmSourceId":"S000000032"},{"DisplayName":"Other publication","PmSourceId":"S000000037"},{"DisplayName":"Other site","PmSourceId":"S000000014"},{"DisplayName":"Preferred employer program","PmSourceId":"S000000028"},{"DisplayName":"Prior resident","PmSourceId":"S000000029"},{"DisplayName":"Property web site","PmSourceId":"S000000001"},{"DisplayName":"Radio Advertising","PmSourceId":"S000000025"},{"DisplayName":"Referral companies/merchants","PmSourceId":"S000000030"},{"DisplayName":"Rent.com","PmSourceId":"S000000012"},{"DisplayName":"Rentals.com","PmSourceId":"S000000010"},{"DisplayName":"RentAndMove.com","PmSourceId":"S000000013"},{"DisplayName":"RentClicks.com","PmSourceId":"S000000046"},{"DisplayName":"RentNet.com","PmSourceId":"S000000009"},{"DisplayName":"Sign","PmSourceId":"S000000023"},{"DisplayName":"TV Advertising","PmSourceId":"S000000024"},{"DisplayName":"UMoveFree.com","PmSourceId":"S000000047"},{"DisplayName":"Unknown/Would not give","PmSourceId":"S000000038"},{"DisplayName":"Yahoo.com","PmSourceId":"S000000048"},{"DisplayName":"Yellow pages","PmSourceId":"S000000022"}]');
+      let matchedSource = f_getSessionStorage('matchedSource');
+      let matchedSourceId = f_getSessionStorage('matchedSourceId');
+      if (!matchedSource) {
+          let referrerUrl = f_getSessionStorage('referrerUrl');
+          if (!referrerUrl && document.referrer && document.referrer.indexOf(document.domain) === -1) {
+              referrerUrl = document.referrer;
+              f_setSessionStorage('referrerUrl', document.referrer);
+          }
+          if (referrerUrl) {
+              let a = document.createElement('a');
+              a.setAttribute('href', referrerUrl);
+              referrerUrl = a.hostname;
+
+              if (referrerUrl.split('.com.').length > 1)
+                  referrerUrl = referrerUrl.substring(0, referrerUrl.lastIndexOf('.com.') + 4);
+              else if (referrerUrl.split('.co.').length > 1)
+                  referrerUrl = referrerUrl.substring(0, referrerUrl.lastIndexOf('.co.') + 3);
+
+              let referralFound = false;
+              $(sourcesList).each(function () {
+                  if (referrerUrl && referrerUrl.match(/[^.]+.[^.]+(?=\.*$)/) && this.DisplayName.toLowerCase().indexOf(referrerUrl.match(/[^.]+.[^.]+(?=\.*$)/).toString().toLowerCase()) > -1) {
+                      matchedSource = encodeURIComponent(this.DisplayName);
+                      f_setSessionStorage('matchedSource', encodeURIComponent(this.DisplayName));
+                      matchedSourceId = this.PmSourceId;
+                      f_setSessionStorage('matchedSourceId', this.PmSourceId);
+                      referralFound = true;
+                  }
+              });
+              if (!referralFound)
+                  $(sourcesList).each(function () {
+                      if (referrerUrl && this.DisplayName.toLowerCase().indexOf(referrerUrl.match(/\w+(?=\.[^.]*$)/).toString().toLowerCase()) > -1) {
+                          matchedSource = encodeURIComponent(this.DisplayName);
+                          f_setSessionStorage('matchedSource', encodeURIComponent(this.DisplayName));
+                          matchedSourceId = this.PmSourceId;
+                          f_setSessionStorage('matchedSourceId', this.PmSourceId);
+                      }
+                  });
+          }
+      }
+  </script>
+
+  <script type="text/javascript">
+      let leadList = [
+          {hcLeadChannelName: "Apartment Finder", Domain: "ApartmentFinder.com"},
+          {hcLeadChannelName: "Apartment Home Living Export", Domain: "ApartmentHomeLiving.com"},
+          {hcLeadChannelName: "ApartmentGuide.com", Domain: "ApartmentGuide.com"},
+          {hcLeadChannelName: "Apartments.com Network", Domain: "Apartments.com"},
+          {hcLeadChannelName: "Rent.com", Domain: "Rent.com"},
+          {hcLeadChannelName: "ForRent.com", Domain: "ForRent.com"},
+          {hcLeadChannelName: "Move.com", Domain: "Move.com"},
+          {hcLeadChannelName: "ApartmentFinder.com", Domain: "ApartmentFinder.com"},
+          {hcLeadChannelName: "ApartmentShowcase.com", Domain: "ApartmentShowcase.com"},
+          {hcLeadChannelName: "ApartmentList.com", Domain: "ApartmentList.com"},
+          {hcLeadChannelName: "Zillow Rental Network", Domain: "zillow.com"},
+          {hcLeadChannelName: "LiveLovely.com", Domain: "LiveLovely.com"},
+          {hcLeadChannelName: "Google.com", Domain: "Google.com"},
+          {hcLeadChannelName: "MyLeasestar", Domain: "myleasestar.com"},
+          {hcLeadChannelName: "Greystar", Domain: "greystar.com"}
+      ];
+
+      $(document).ready(function () {
+          let referrerUrl = f_getSessionStorage('referrerUrl');
+          let domainUrl = document.domain.match(/[^.]+.[^.]+(?=\.*$)/).toString();
+          let referralPhoneNum = f_getSessionStorage('referralPhoneNum');
+
+          if (!referrerUrl && document.referrer) {
+              f_setSessionStorage('referrerUrl', document.referrer);
+              referrerUrl = document.referrer;
+          } else if (referrerUrl && referrerUrl.indexOf(domainUrl) === -1 && document.referrer && document.referrer.indexOf(domainUrl) === -1 && referrerUrl !== document.referrer) {
+              f_setSessionStorage('referrerUrl', document.referrer);
+              referrerUrl = document.referrer;
+          }
+
+          let cid = false;
+          if (f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM'))
+              cid = f_getAnalyticsUserValueFromCookie('RP_LSWS_SEM').toLowerCase().indexOf('lsem') !== -1;
+          let changePhoneNum = false;
+          if (!cid && !googleCallTrackingEnabled)
+              changePhoneNum = true;
+
+          if (changePhoneNum && ((referrerUrl && referrerUrl.indexOf('http') > -1) || referralPhoneNum)) {
+              let phoneNumberList = [];
+              let a = document.createElement('a');
+              a.setAttribute('href', referrerUrl);
+              let referrerHostname = a.hostname.match(/[^.]+.[^.]+(?=\.*$)/).toString();
+
+              if (referralPhoneNum)
+                  phoneNumberList.push(referralPhoneNum);
+              else if (leadObj) {
+                  $(leadList).each(function (i, v) {
+                      if (v.Domain.toLowerCase().indexOf(referrerHostname.toLowerCase()) > -1) {
+                          $(leadObj).each(function () {
+                              if (this.LeadChannelName && this.LeadChannelName.toLowerCase().indexOf(v.hcLeadChannelName.toLowerCase()) > -1) {
+                                  phoneNumberList.push(this.PhoneNumber);
+                                  sessionStorage.setItem('referralPhoneNum', this.PhoneNumber);
+                              }
+                          });
+                      }
+                  });
+              }
+
+              if (phoneNumberList.length === 1) {
+                  $('.seo-number').each(function () {
+                      $(this).html(phoneNumberList[0]);
+
+                      if ($(this).attr('href') && $(this).attr('href').indexOf('tel:') > -1)
+                          $(this).attr('href', 'tel: ' + phoneNumberList[0]);
+                      if ($(this).attr('onclick') && $(this).attr('onclick').indexOf('f_analyticsSendEvent(') > -1) {
+                          $(this).attr('onclick', "f_analyticsSendEvent('general', 'click-phone-number', '" + phoneNumberList[0] + '\')');
+                      }
+                  });
+              } else if (phoneNumberList.length === 0) {
+                  if (referrerHostname.indexOf('.') > -1)
+                      referrerHostname = referrerHostname.substring(0, referrerHostname.indexOf('.'));
+
+                  $(leadObj).each(function (i, v) {
+                      if (v.LeadChannelName && v.LeadChannelName.toLowerCase().indexOf(referrerHostname.toLowerCase()) > -1 && v.PhoneNumber != null) {
+                          phoneNumberList.push(v.PhoneNumber);
+                          sessionStorage.setItem('referralPhoneNum', this.PhoneNumber);
+                      }
+                  });
+                  if (phoneNumberList.length === 1) {
+                      $('.seo-number').each(function () {
+                          $(this).html(phoneNumberList[0]);
+                          if ($(this).attr('href') && $(this).attr('href').indexOf('tel:') > -1)
+                              $(this).attr('href', 'tel: ' + phoneNumberList[0]);
+                          if ($(this).attr('onclick') && $(this).attr('onclick').indexOf('f_analyticsSendEvent(') > -1) {
+                              $(this).attr('onclick', "f_analyticsSendEvent('general', 'click-phone-number', '" + phoneNumberList[0] + '\')');
+                          }
+                      });
+                  }
+              }
+          }
+      });
+  </script>
+  <script type="text/javascript">let propertyId = '5809262';
+  let lsApi = 'https://c-leasestar-api.realpage.com/';
+  let cacheUrl = '';</script>
+  <script type="text/javascript">let leadObj = [{"PhoneNumber": "(972) 954-1935", "LeadChannelName": "Website"}];
+  let googleCallTrackingEnabled = false;</script>
+  <link rel="canonical" href="http://aurora.cms2.myleasestar.com/Features.aspx"/>
+  <script type="text/javascript">dataLayer = [{
+      'propertyId': '5809262',
+      'companyId': '27967',
+      'productTypeId': '6131'
+  }];</script>
+  <link
+    href="CMSPages/D__CMS_Kentico_CMSScripts_Custom_RPWebParts_fancybox3_jquery.fancybox.css4bbf.css?stylesheetfile=/CMSScripts/Custom/RPWebParts/fancybox3/jquery.fancybox.css"
+    type="text/css" rel="stylesheet"/>
+  <script type="text/javascript">let mvTourText = '';
+  let mvColor = 'd59b79';
+  mvBtnAnimation = 'spin'</script>
+  <script type="text/javascript">let mvTours = [{
+      "Type": "UKN",
+      "MediaId": 56300281,
+      "DisplaySequence": 430,
+      "Caption": "2 Bedroom",
+      "Src": "https://my.matterport.com/show/?m=isKMZjiLTzn",
+      "AltText": "2 Bedroom Tour Demo",
+      "TourType": "Matterport",
+      "ImgUrl": "https://capi.myleasestar.com/v2/dimg/56300280/%s/56300280.png"
+  }]</script>
+
+  <script src="CMSScripts/Custom/RPWebParts/fancybox3/jquery.fancybox.js" defer="defer" type="text/javascript"></script>
+  <script src="CMSScripts/Custom/RPWebParts/media-viewer.js" defer="defer" type="text/javascript"></script>
+  <script src="https://uc-widget.realpageuc.com/widget?wid=Uid14aQ2DL36RhRl2tRP6K" defer="defer" type="text/javascript"></script>
+  <link href="CMSPages/D__CMS_Kentico_CMSScripts_Custom_RPWebParts_fancybox_jquery.fancybox.css443a.css?stylesheetfile=/CMSScripts/Custom/RPWebParts/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" rel="stylesheet"/>
+  <link href="CMSPages/D__CMS_Kentico_CMSScripts_Custom_RPWebParts_fancybox_helpers_jquery.fancybox-buttons.cssa6cb.css?stylesheetfile=/CMSScripts/Custom/RPWebParts/fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" rel="stylesheet"/>
+  <link href="CMSPages/D__CMS_Kentico_CMSScripts_Custom_RPWebParts_fancybox_helpers_jquery.fancybox-thumbs.cssaa00.css?stylesheetfile=/CMSScripts/Custom/RPWebParts/fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" rel="stylesheet"/>
+  <script src="CMSScripts/Custom/RPWebParts/jquery.mobile.toucheventsonly.min.js" defer="defer"
+          type="text/javascript"></script>
+  <script src="CMSScripts/Custom/RPWebParts/fancybox/jquery.fancybox8cbb.js?v=2.1.5" defer="defer"
+          type="text/javascript"></script>
+  <script src="CMSScripts/Custom/RPWebParts/fancybox/helpers/jquery.fancybox-thumbs.js" defer="defer"
+          type="text/javascript"></script>
+  <script src="CMSScripts/Custom/RPWebParts/fancybox/helpers/jquery.fancybox-buttons.js" defer="defer"
+          type="text/javascript"></script>
+  <script type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+      let RpUniqueUserId = f_getAnalyticsUserValueFromCookie('RP_LSWS_USER');
+      ga('create', 'UA-34758307-2', {'userId': RpUniqueUserId});
+      ga('set', {
+          'dimension4': 5809262,
+          'dimension5': 27967,
+          'dimension9': RpUniqueUserId,
+          'dimension10': 's0071-aurora',
+          'dimension11': new Date().getTime()
+      });
+      ga('send', 'pageview');</script>
+</head>
+<body class="LTR ENUS ContentBody">
+
+<!-- Google Tag Manager -->
+<noscript>
+  <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PNG482G" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script type="text/javascript">
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            "gtm.start":
+                new Date().getTime(), event: "gtm.js"
+        });
+        let f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l !== "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+            "../www.googletagmanager.com/gtm5445.html?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PNG482G");
+</script>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    let displayModal = navigator.userAgent.indexOf("MSIE") >= 0;
+
+    $(document).ready(function () {
+        let cookie = f_getBrowserSessionCookie('showBrowserVersionOnPageLoad');
+
+        if (displayModal && cookie === null) {
+            $('.oB-overlay').show();
+            $('#oldBrowserModal').show();
+            f_setBrowserSessionCookie('showBrowserVersionOnPageLoad', false);
+        }
+        $('#closeBrowserModalButton').on('click', function () {
+            $('.oB-overlay').hide();
+            $('#oldBrowserModal').hide();
+        });
+    });
+
+    function f_setBrowserSessionCookie(cookieName, value) {
+        document.cookie = cookieName + "=" + value;
+    }
+
+    function f_getBrowserSessionCookie(cookieName) {
+        let cookieValue = document.cookie;
+        let cookieStart = cookieValue.indexOf(" " + cookieName + "=");
+        if (cookieStart === -1) {
+            cookieStart = cookieValue.indexOf(cookieName + "=");
+        }
+        if (cookieStart === -1) {
+            cookieValue = null;
+        }
+        else {
+            cookieStart = cookieValue.indexOf("=", cookieStart) + 1;
+            let cookieEnd = cookieValue.indexOf(";", cookieStart);
+            if (cookieEnd === -1) {
+                cookieEnd = cookieValue.length;
+            }
+            cookieValue = unescape(cookieValue.substring(cookieStart, cookieEnd));
+        }
+        return cookieValue;
+    }
+</script>
+<div class="oB-overlay" style="display: none;"></div>
+<div id="oldBrowserModal" style="display: none;">
+  <div class="oB-dialog">
+    <div class="oB-content">
+      <div class="oB-header">
+        <h4>For the best website experience, please update your browser</h4>
+      </div>
+      <div class="oB-body">
+        <p>Just click on the icons to get to the download page</p>
+        <div class="browserSelect">
+          <div class="browserIconContainer" id="firefoxTab">
+            <div class="browserColumn">
+              <a class="browserLink" href="https://www.mozilla.org/en-US/firefox/new/?v=1" target="_blank">
+                <div class="browserImage"><img src="GlobalResources/BrowserIcons/firefoxLogo.png"/></div>
+                <div class="browserName">Firefox</div>
+              </a>
+            </div>
+          </div>
+          <div class="browserIconContainer" id="chromeTab">
+            <div class="browserColumn">
+              <a class="browserLink" href="https://www.google.com/chrome/browser/desktop/" target="_blank">
+                <div class="browserImage"><img src="GlobalResources/BrowserIcons/chromeLogo.png"/></div>
+                <div class="browserName">Chrome</div>
+              </a>
+            </div>
+          </div>
+          <div class="browserIconContainer" id="safariTab">
+            <div class="browserColumn">
+              <a class="browserLink" href="https://support.apple.com/downloads/safari" target="_blank">
+                <div class="browserImage"><img src="GlobalResources/BrowserIcons/safariLogo.png"/></div>
+                <div class="browserName">Safari</div>
+              </a>
+            </div>
+          </div>
+          <div class="browserIconContainer" id="explorerTab">
+            <div class="browserColumn">
+              <a class="browserLink" href="https://www.microsoft.com/en-us/download/internet-explorer.aspx"
+                 target="_blank">
+                <div class="browserImage"><img src="GlobalResources/BrowserIcons/explorerLogo.png"/></div>
+                <div class="browserName">Internet Explorer 11</div>
+              </a>
+            </div>
+          </div>
+          <div class="browserIconContainer" id="edgeTab">
+            <div class="browserColumn">
+              <a class="browserLink" href="https://www.microsoft.com/en-us/windows/microsoft-edge#0QiY0Omq3i5Z0krF.97"
+                 target="_blank">
+                <div class="browserImage"><img src="GlobalResources/BrowserIcons/edgeLogo.png"/></div>
+                <div class="browserName">Edge</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="closeBrowserModalButton" type="button">Close Window</button>
+      <div class="oB-footer">
+        <p></p>By closing this window you acknowledge that your experience on this website may be degraded<p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<form method="post" action="http://aurora.cms.myleasestar.com/Features.aspx" id="form">
+  <div>
+    <input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value=""/>
+    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""/>
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTIzNzM5ODY2D2QWAgIID2QWAmYPFgIeB1Zpc2libGVoFgJmDxUBAGRkgHxeaLibLo99tx8qkoRTFbYtsbk="/>
+  </div>
+
+  <script type="text/javascript">
+      //<![CDATA[
+      let theForm = document.forms['form'];
+      if (!theForm) {
+          theForm = document.form;
+      }
+
+      function __doPostBack(eventTarget, eventArgument) {
+          if (!theForm.onsubmit || (theForm.onsubmit() !== false)) {
+              theForm.__EVENTTARGET.value = eventTarget;
+              theForm.__EVENTARGUMENT.value = eventArgument;
+              theForm.submit();
+          }
+      }
+
+      //]]>
+  </script>
+
+
+  <script
+    src="WebResourceba32.js?d=_YnDaPMy1-UwPC8JeEW6fOU3LpMFXdCNRyjuFbpE6O7FAJsUtgfTkfp7b7ida5Zyj15lRD8T8tLAT1tpSTEXoUa-c601&amp;t=635418424260000000"
+    type="text/javascript"></script>
+
+  <input type="hidden" name="lng" id="lng" value="en-US"/>
+  <script type="text/javascript">
+      //<![CDATA[
+
+      function PM_Postback(param) {
+          if (window.top.HideScreenLockWarningAndSync) {
+              window.top.HideScreenLockWarningAndSync(1080);
+          }
+          __doPostBack('m', param);
+      }
+
+      function PM_Callback(param, callback, ctx) {
+          if (window.top.HideScreenLockWarningAndSync) {
+              window.top.HideScreenLockWarningAndSync(1080);
+          }
+          WebForm_DoCallback('m', param, callback, ctx, null, true);
+      }
+
+      //]]>
+  </script>
+  <script
+    src="ScriptResource5669.js?d=V_SKADO14O14hgHRR1ZczB-7f0jdlX5UK_TzAwiqssqdsXLKdP8RgEzz0gt7qQxKCrXxgE2IKkO32Xia6JI59L1OltpqLAt8ErOLqkXzsyOb6fP2GOW_R49GLKnV7AMKc_VUeQ2&amp;t=3a1336b1"
+    type="text/javascript"></script>
+  <script
+    src="ScriptResourcef893.js?d=RRScsVnhNNuThT4Ry_TVhIqi0dfipEmSzDo6EAtzSqe7eR8wJ-eb2Ty7Vasq3VFfPBiMBpfOzybilBrZPcXpUC2QfmVZVoLJQzEjjODyD8mQxIxW0tnZ228nYYuP5rZ6S6bFYA2&amp;t=3a1336b1"
+    type="text/javascript"></script>
+  <div>
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185"/>
+  </div>
+  <script type="text/javascript">
+      //<![CDATA[
+      Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM', ''], [], [], 90, '');
+      //]]>
+  </script>
+  <div id="CMSHeaderDiv">
+    <!-- -->
+  </div>
+  <div id="ctxM">
+
+  </div>
+
+
+  <!-- MediaViewer Added -->
+  <header class="header">
+    <div class="top-spacer"></div>
+    <div class="header-contents">
+      <div class="header-top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="top-address top-link">
+              <a href="Basanovich.html" target="_self">
+                <em class="icon-pin hidden-lg"></em>
+                <span class="hidden-sm hidden-xs hidden-md">Apartment 1 - Basanovich</span>
+                <span class="hidden-lg">Directions</span>
+              </a>
+            </div>
+            <div class="top-CTA1 top-link">
+              <a href="Madara.html" target="_self" class="hidden-xs">
+                <span class="hidden-lg">
+                  <em class="icon-handshake"></em>
+                </span>
+                Apartment 2 - Madara</a>
+            </div>
+            <div class="header-chat top-link hidden-md hidden-sm hidden-xs">
+              <div id="p_lt_zoneHeaderTop_LiveChatV1_pnlLiveChat" class="live-chat-container">
+                <a id="_lpChatBtn" href="SavaRadulov.html">Apartment 3 - Sava Radulov</a>
+              </div>
+            </div>
+            <div class="top-CTA2 top-link">
+              <a href="http://aurora.cms2.myleasestar.com/" target="_self" class="hidden-xs">
+              <span class="hidden-lg">
+                <em class="icon-user-1"></em>
+              </span>
+              Apartment 4 - Nikolaevich
+            </a></div>
+            <div class="header-phone top-link">
+              <a class="seo-number" href="SavaRadulov.html">Apartment 5 - Sava Radulov (2)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu-container">
+        <div id="menu-flyout">
+          <div class="menu-flyout-container">
+            <div class="menu-left">
+              <div class="cta-button close-button">
+                <a type="button" data-toggle="toggle" data-target=".main-menu-container">Close
+                  <em class="fa fa-times" maria-hidden="true"></em>
+                </a>
+              </div>
+              <ul id="menuElem">
+                <li style=""><a href="Home.html" style="">Home</a></li>
+                <li class="floor-plans" style=""><a href="Floor-plans.html" style="">Floor plans</a></li>
+                <li class="active features" style=""><a href="Features.html" style="">Features</a></li>
+                <li class="gallery" style=""><a href="Gallery.html" style="">Gallery</a></li>
+                <li class="location" style=""><a href="Location.html" style="">Location</a></li>
+                <li class="residents" style=""><a href="http://aurora.cms2.myleasestar.com/" style="">Residents</a></li>
+                <li class="contact" style=""><a href="Contact-2.html" style="">Contact Us</a></li>
+              </ul>
+              <div class="menu-CTAs">
+                <div class="cta-button">
+                  <a href="neighborhood.html" target="_self">
+                    Area Attractions
+                    <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+                  </a>
+                </div>
+                <div class="cta-button">
+                  <a href="contact.html" target="_self">
+                    Schedule A Tour
+                    <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="menu-right"></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div id="specials-flyout" class="collapse">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <h4 class="specials-header"></h4>
+
+            </div>
+            <div id="specials-button-column" class="col-sm-4">
+              <div class="cta-button">
+                <a>
+
+                  <em class="fa fa-long-arrow-right" aria-hidden="true"></em>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <div class="menu-button">
+            <a type="button" data-toggle="toggle" data-target=".main-menu-container">
+              <em class="fa fa-bars" aria-hidden="true"></em>
+              <span class="hidden-xs">MENU</span>
+            </a>
+          </div>
+          <div class="header-FP-Link">
+            <a href="floor-plans-2.html">
+              <span class="hidden-xs">FLOOR PLANS</span>
+              <em class="icon-blueprint"></em>
+            </a>
+          </div>
+          <div id="propertyLogo" class="">
+            <span class="headerlogo" >Bahnevi</span>
+            <a href="index.html">
+              <img id="p_lt_zoneHeaderMain_EditableImage_ucEditableImage_imgImage" src="../capi.myleasestar.com/finale.png" alt="" style="border-width:0;"/>
+            </a>
+            <span class="headerlogo">Apartments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="features-content">
+    <div class="container inner-page-top">
+      <h4>HOUSE RULES AND CANCELLATIONS</h4>
+    </div>
+  </div>
+  <div class="cancellations">
+    <div class=""></div>
+    <div class="container">
+      <div class="inner-content-shadow">
+        <div class="features-widget-2">
+          <div id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneFeaturesBottom_WebPartLoader_pnlContainer">
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    if ($('.view-more-community').length > 0) {
+                        $('.view-more-community').click(function () {
+                            $('.amenities-tabbed-dialog').show();
+                            $('.amenities-tabbed-overlay').show();
+                            $('body').addClass('modal-open');
+                            $('.amenities-list-modal-div').show();
+                            $('.apartment-amenities-list-modal-div').hide();
+                        });
+                    }
+                    if ($('.view-more-apartment').length > 0) {
+                        $('.view-more-apartment').click(function () {
+                            $('.amenities-tabbed-dialog').show();
+                            $('.amenities-tabbed-overlay').show();
+                            $('body').addClass('modal-open');
+                            $('.apartment-amenities-list-modal-div').show();
+                            $('.amenities-list-modal-div').hide();
+                        });
+                    }
+
+                    $('.amenities-tabbed-overlay').click(function () {
+                        f_hideAmenitiesModal();
+                    });
+
+                    let maxTabHeight = 0;
+
+                    if (screen.width > 500) {
+                        $('.tabs-panel').each(function (i, v) {
+                            if ($(v).height() > maxTabHeight)
+                                maxTabHeight = $(v).height();
+                        });
+                        $('.tabs-panel').css('min-height', maxTabHeight);
+                    }
+
+                    $('.tabs-title .tabs-link').click(function () {
+                        $('#example-tabs .tabs-title').removeClass('is-active');
+                        $('.tabs-content .tabs-panel').removeClass('is-active');
+                        $(this).parent().addClass('is-active');
+                        let checkId = $(this).attr('data');
+                        $(checkId).addClass('is-active');
+                    });
+
+                    let pixelRatio = ((window.devicePixelRatio) ? window.devicePixelRatio : 1);
+                    let windowWidth = Math.floor(window.innerWidth * 0.80 * pixelRatio);
+                    let windowHeight = Math.floor(window.innerHeight * 0.80 * pixelRatio);
+                    let fullImageSizeString = windowWidth + 'x' + windowHeight;
+
+                    $('.amenity-image-link').each(function (i, e) {
+                        let selectedAmenityImageUrl = $(e).data('amenityimage');
+                        selectedAmenityImageUrl = selectedAmenityImageUrl.replace('%s', fullImageSizeString);
+                        $(e).attr('data-fancybox-href', selectedAmenityImageUrl).attr('data-fancybox-title', $(e).html());
+                        let groupName = 'amenity-image-gallery';
+                        if ($(e).hasClass('amenity-image-modal-link'))
+                            groupName = 'amenity-image-modal-gallery';
+                        $(e).attr('data-fancybox-group', groupName);
+                    });
+
+                    $('.amenity-image-link').fancybox({
+                        openEffect: 'none',
+                        closeEffect: 'none',
+                        helpers: {
+                            buttons: {
+                                position: 'bottom',
+                                tpl: '<div id="fancybox-buttons" class="amenity-image-slider-buttons"><ul>' +
+                                '<li><a class="btnPrev" title="Previous" href="javascript:;"></a></li>' +
+                                '<li><a class="btnNext" title="Next" href="javascript:;"></a></li>' +
+                                '<li><a class="btnClose" title="Close" href="javascript:;"></a></li>' +
+                                '</ul></div>'
+                            }
+                        },
+                        wrapCSS: 'amenities-image-wrapper',
+                        afterLoad: function () {
+                            $('.fancybox-overlay').addClass("amenities-image-overlay");
+                        },
+                        afterShow: function () {
+                            if (this.group.length < 2) {
+                                $.extend(this, {
+                                    loop: false,
+                                });
+                                this.helpers.buttons = null;
+                            }
+                        }
+                    });
+
+                    $('body').on('swipeleft', '.fancybox-outer', function () {
+                        $.fancybox.next();
+                    }).on('swiperight', '.fancybox-outer', function () {
+                        $.fancybox.prev();
+                    });
+                });
+
+                function f_hideAmenitiesModal() {
+                    $('.amenities-tabbed-dialog').hide();
+                    $('.amenities-tabbed-overlay').hide();
+                    $('body').removeClass('modal-open');
+                }
+            </script>
+            <div
+              id="p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneFeaturesBottom_WebPartLoader_ctl00_pnlAmenitiesTabbed"
+              class="amenities-tabbed-container columns">
+
+              <div id="client-tabs-1"
+                   class="row p_lt_zonePagePlaceholder_pageplaceholder_p_lt_zoneFeaturesBottom_WebPartLoader_ctl00_pnlAmenitiesTabbed">
+                <div class="columns at-container">
+                  <ul data-tabs="data-tabs" id="example-tabs" class="tabs">
+                    <li class="tabs-title is-active" role="presentation">
+                      <div class="tabs-link" data="#client-panel-0" role="tab" aria-controls="client-panel-0"
+                           aria-selected="false" id="client-panel-0-label">Basanovich
+                      </div>
+                    </li>
+                    <li class="tabs-title" tab-apartment-amenities="tab-apartment-amenities" role="presentation">
+                      <div class="tabs-link" data="#client-panel-1" role="tab" aria-controls="client-panel-1"
+                           aria-selected="false" id="client-panel-1-label">Madara
+                      </div>
+                    </li>
+                    <li class="tabs-title" tab-pet-policy="tab-pet-policy" role="presentation">
+                      <div class="tabs-link" data="#client-panel-2" role="tab" aria-controls="client-panel-2"
+                           aria-selected="false" id="client-panel-2-label">Sava Radulov
+                      </div>
+                    </li>
+                    <li class="tabs-title" tab-parking-details="tab-parking-details" role="presentation">
+                      <div class="tabs-link" data="#client-panel-3" role="tab" aria-controls="client-panel-3"
+                           aria-selected="false" id="client-panel-3-label">Nikolaevich
+                      </div>
+                    </li>
+                    <li class="tabs-title" tab-parking-details="tab-parking-details" role="presentation">
+                      <div class="tabs-link" data="#client-panel-4" role="tab" aria-controls="client-panel-4"
+                           aria-selected="false" id="client-panel-4-label">Sava Radulov (2)
+                      </div>
+                    </li>
+                  </ul>
+                  <div data-tabs-content="example-tabs" class="tabs-content">
+                    <div id="client-panel-0" class="tabs-panel is-active">
+                      <div class="row">
+                        <div class="large-12 columns"><h1>House Rules</h1></div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-1"><span>If you are going to some vacation/holiday, please turn the apartment water  off.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If the water stops, please turn the boiler off</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>All the bulbs in the apartment are energy saving and have 2-years guarantee - if one of the bulbs got “dead” – do not throw it!</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the washing machine door open as much as possible.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please keep the mattress in the bedroom open from time to time.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Please clean the air-conditioner filters every month.</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>500 leva rent/ 257 euros each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>7-8 leva for the building staircase – electricity and cleaning each month</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Mobile  - 0899 196 270 – Atanas Atanasov / Viber/ WhatsApp </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If something needs to be repaired ,text / call me </span></li>
+                          </ul>
+                        </div>
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-1"><span>Skype – zlatnata_obuvka</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Exact Address -  D-r Basanovich 09 street, Varna, apartment 2, floor 1</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>One month notification before leaving</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>The rent should be paid between        each month, if you think that you will be late for the rent sometime text/call me</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your water bills online at http://vikvarna.com/ your water ID is 1760274 </span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your water meter usage starts with ...</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>You can check your electricity bills online https://www.energo-pro.bg/bg/Proverka-na-smetka-za-elektroenergiya</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>Your electricity ID is 1100313269</span></li>
+                            <li class="tabbed-amenity ta-col-1"><span>If you forget your keys in the apartment I have keys at home</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="client-panel-1" class="tabs-panel">
+                      <div class="row">
+                        <div class="large-12 columns"><h1>House Rules</h1></div>
+                      </div>
+                      <div class="row">
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-1"><span>House Rules</span></li>
+                          </ul>
+                        </div>
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-2"><span>House Rules</span></li>
+                          </ul>
+                        </div>
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-3"><span>House Rules</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="client-panel-2" class="tabs-panel">
+                      <div class="row">
+                        <div class="large-12 columns"><h1>House Rules</h1></div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="pet-item">Pet Policy Type: Cats and Dogs</li>
+                            <li class="pet-item">Pet Policy: STW Properties welcomes your four legged friends. Prior to
+                              move in, we will need copies of shot records. Permissible pets include dogs and indoor
+                              cats that do not exceed seventy (70) pounds in weight when full grown. Aggressive breeds
+                              prohibited.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="pet-item">Max Number of Pets: 2</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="client-panel-3" class="tabs-panel">
+                      <div class="row">
+                        <div class="large-12 columns"><h1>House Rules</h1></div>
+                      </div>
+                      <div class="row">
+                        <div class="large-6 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="parking-item">Parking Type: Surface Lot</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="client-panel-4" class="tabs-panel">
+                      <div class="row">
+                        <div class="large-12 columns"><h1>House Rules</h1></div>
+                      </div>
+                      <div class="row">
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-1"><span>Granite Countertops</span></li>
+                          </ul>
+                        </div>
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-2"><span>Washer/Dryer Hookups</span></li>
+                          </ul>
+                        </div>
+                        <div class="large-4 columns">
+                          <ul class="at-comm-amenities">
+                            <li class="tabbed-amenity ta-col-3"><span>Stainless Steel Appliances</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="amenities-tabbed-overlay" style="display: none"></div>
+              <div class="amenities-tabbed-dialog" style="display: none">
+                <div class="amenities-list-modal-div">
+                  <div class="amenities-tabbed-header"><h3>House Rules</h3><a onclick="f_hideAmenitiesModal()">&times;</a>
+                  </div>
+                  <div class="list-wrapper">
+                    <ul class="amenities-list-modal">
+                      <li class="amenity-item-modal"><span>Pool</span></li>
+                      <li class="amenity-item-modal"><span>Spa</span></li>
+                      <li class="amenity-item-modal"><span>Concierge</span></li>
+                      <li class="amenity-item-modal"><span>Fitness Center</span></li>
+                      <li class="amenity-item-modal"><span>Clubhouse</span></li>
+                      <li class="amenity-item-modal"><span>Business Center</span></li>
+                      <li class="amenity-item-modal"><span>Controlled Access</span></li>
+                      <li class="amenity-item-modal"><span>Courtyard</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="apartment-amenities-list-modal-div">
+                  <div class="amenities-tabbed-header"><h3>House Rules</h3><a onclick="f_hideAmenitiesModal()">&times;</a>
+                  </div>
+                  <div class="list-wrapper">
+                    <ul class="apartment-amenities-list-modal">
+                      <li class="apartment-amenity-item"><span>Granite Countertops</span></li>
+                      <li class="apartment-amenity-item"><span>Washer/Dryer Hookups</span></li>
+                      <li class="apartment-amenity-item"><span>Stainless Steel Appliances</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+      $(document).ready(function () {
+          let clickToPopUp = document.getElementById('p_lt_zonePagePlaceholder_rpWebpart_PopUp_ClickToPopUp');
+          let disableOnMobile = 'False';
+          let isSmallScreenDevice = $(window).width() <= 500;
+
+          let cookie = f_getSessionCookie('showOnPageLoad');
+          let endDate = '';
+          let convertedEndDate = new Date(endDate + " 23:59:59");
+          let today = new Date();
+          if (window.location.pathname.toLocaleLowerCase().indexOf("home") > -1 || window.location.pathname.length < 2) {
+              if (!endDate || convertedEndDate > today) {
+                  if (!cookie || 'True'.toLowerCase() === 'true') {
+                      if (('True'.toLowerCase() === 'true' || 'True'.toLowerCase() === 'true') && ((disableOnMobile.toLowerCase() === 'false' || !isSmallScreenDevice)))
+                          f_showDialog(true);
+                      f_setSessionCookie('showOnPageLoad', false);
+                  }
+              }
+          }
+
+          $('.clickToPopUp').click(function () {
+              f_showDialog(true);
+          });
+
+          if ('' && !isSmallScreenDevice) {
+              $('.popUpWindowDialog').css('width', 640);
+          } else if (isSmallScreenDevice)
+              $('.popUpWindowDialog').addClass('imageOverride');
+      });
+
+      function f_setSessionCookie(cookieName, value) {
+          document.cookie = cookieName + "=" + value;
+      }
+
+      function f_getSessionCookie(cookieName) {
+          let cookieValue = document.cookie;
+          let cookieStart = cookieValue.indexOf(" " + cookieName + "=");
+          if (cookieStart === -1) {
+              cookieStart = cookieValue.indexOf(cookieName + "=");
+          }
+          if (cookieStart === -1) {
+              cookieValue = null;
+          }
+          else {
+              cookieStart = cookieValue.indexOf("=", cookieStart) + 1;
+              let cookieEnd = cookieValue.indexOf(";", cookieStart);
+              if (cookieEnd === -1) {
+                  cookieEnd = cookieValue.length;
+              }
+              cookieValue = unescape(cookieValue.substring(cookieStart, cookieEnd));
+          }
+          return cookieValue;
+      }
+
+      function f_showDialog(modal) {
+          if ($('#popUpWindowDialog').length > 0) {
+              $("#popup-overlay").show();
+              $(".popUpWindowLightBox").fadeIn(300);
+              if (modal) {
+                  $("#popup-overlay").unbind("click");
+              } else {
+                  $("#popup-overlay").click(function () {
+                      f_hideDialog();
+                  });
+              }
+          }
+      }
+
+      function f_hideDialog() {
+          $("#popup-overlay").hide();
+          $(".popUpWindowLightBox").fadeOut(300);
+      }
+
+  </script>
+
+  <div id="popup-overlay" class="popup-overlay"></div>
+  <div id="p_lt_zonePagePlaceholder_rpWebpart_PopUp_PopUpWindow" class="popUpWindowLightBox">
+  </div>
+  <div id="p_lt_zonePagePlaceholder_rpWebpart_PopUp_ClickToPopUp" class="clickToPopUp">
+  </div>
+  <footer class="spacer clear">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div id="footerLogo1" class="footer-logo">
+            <a href="index.html">
+              <img
+                id="p_lt_zoneFooter1_EditableImage2_ucEditableImage_imgImage"
+                title="Bahnevi Apartments Varna"
+                src="../capi.myleasestar.com/finale.png"
+                alt="https://capi.myleasestar.com/v2/dimg/51691121/%s/51691121.png" style="border-width:0;"/>
+            </a>
+          </div>
+          <div id="footerLogo2" class="footer-logo">
+            <a href="index.html">
+              Bahnevi Apartments
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-5">
+          <div class="oh-overlay" style=""></div>
+          <div
+            class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-container-u office-hours-container">
+            <a id="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-u"
+               class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-link-c-u oh-link-c"></a>
+            <div
+              class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-modal-container-u office-hours-modal-container"
+              style="display:none;">
+              <div class="oh-header">
+                <div class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-oh-u oh">Office Hours:</div>
+                <div class="oh-button-close">&times;</div>
+              </div>
+              <div id="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours"
+                   class="p_lt_zoneFooter2_rpWebpart_OfficeHours_pnlOfficeHours-office-hours-list-container-u">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2"><h5>Links</h5>
+          <ul id="menuEle">
+            <li class="site-map">
+              <a href="site-map.html">Site Map</a>
+            </li>
+            <li class="privacy">
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="http://aurora.cms2.myleasestar.com/" class="residents" target="_blank">Residents</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-5">
+          <h5>Follow Us On</h5>
+          <div id="p_lt_zoneFooter4_rpWebpartSocialMedia_pnlSocialNetworks" class="social_media">
+            <a href="http://www.facebook.com/" class="facebook" title="" target="_blank"
+               onclick="f_analyticsSendEvent('social', 'click-facebook-icon', 'http://www.facebook.com/')" role="button"
+               aria-label="facebook">
+              <em class="sicon-facebook" aria-hidden="true"></em>
+            </a>
+            <a href="http://www.instagram.com/" class="instagram" title="" target="_blank" onclick="f_analyticsSendEvent('social', 'click-instagram-icon', 'http://www.instagram.com/')" role="button" aria-label="instagram">
+              <em class="sicon-instagram" aria-hidden="true"></em>
+            </a>
+            <a href="http://www.google.com/" class="google" title="" target="_blank" onclick="f_analyticsSendEvent('social', 'click-google-icon', 'http://www.google.com/')" role="button" aria-label="google">
+              <em class="sicon-google" aria-hidden="true"></em>
+            </a>
+          </div>
+          <div class="footerCopyright">Copyright &copy; 2019 Bahnevi</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+      //<![CDATA[
+      (function () {
+          let fn = function () {
+              $get("manScript_HiddenField").value = '';
+              Sys.Application.remove_init(fn);
+          };
+          Sys.Application.add_init(fn);
+      })();
+      WebForm_InitCallback();//]]>
+  </script>
+</form>
+
+<script
+  src="http://cmsadmin.myleasestar.com/sitetracker.aspx?platform=cms2&amp;SiteId=5809262&amp;template=S0071-Aurora"
+  type="text/javascript">
+</script>
+
+<script type="text/javascript">
+    try {
+        $(document).foundation();
+    }
+    catch (err) {
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,2289 @@
+/* #Pages/00-Fonts# */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+
+html body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    background: #29292e url(../TemplateResources/Standard/Aurora/images/background-patterns/3px-tile.png) repeat left top;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Unica One', sans-serif;
+    text-transform: uppercase;
+}
+
+body h1 {
+    font-size: 78px;
+    line-height: 1;
+}
+
+body h2 {
+    font-size: 64px;
+    line-height: 1;
+}
+
+body h3 {
+    font-size: 62px;
+    line-height: 1;
+}
+
+body h4 {
+    font-size: 42px;
+    line-height: 1;
+}
+
+body h5 {
+    font-size: 32px;
+    line-height: 1;
+}
+
+body h6 {
+    font-size: 28px;
+    line-height: 1;
+}
+
+body p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    letter-spacing: 1.2px;
+}
+
+body #masterHeader, body footer, body footer p {
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    body h1 {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    body h2 {
+        font-size: 54px;
+        line-height: 1;
+    }
+
+    body h3 {
+        font-size: 52px;
+        line-height: 1;
+    }
+
+    body h4 {
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    body h5 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    body h6 {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    body p {
+        font-size: 18px;
+        margin: 0 0 20px;
+        letter-spacing: 1.2px;
+    }
+
+    body #masterHeader, body footer, body footer p {
+        font-size: 14px;
+    }
+}
+
+h1
+
+@media (max-width: 767px) {
+    body h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    body h2 {
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    body h3 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    body h4 {
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    body h5 {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    body h6 {
+        font-size: 26px;
+        line-height: 1;
+    }
+
+    body p {
+        font-size: 18px;
+        margin: 0 0 20px;
+        letter-spacing: 1.2px;
+    }
+
+    body #masterHeader, body footer, body footer p {
+        font-size: 14px;
+    }
+}
+
+body a, body a:hover {
+    color: #d59b79;
+}
+
+/* Fontello */
+@font-face {
+    font-family: 'fontello', sans-serif;
+    src: url('TemplateResources/Global/Icons/fontello.eot');
+    src: url('/TemplateResources/Global/Icons/fontello2552.eot') format('embedded-opentype'),
+    url('/TemplateResources/Global/Icons/fontello2552.woff') format('woff'),
+    url('/TemplateResources/Global/Icons/fontello2552.ttf') format('truetype'),
+    url('/TemplateResources/Global/Icons/fontello2552.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="sicon-"]:before, [class*=" sicon-"]:before {
+    font-family: 'fontello';
+    font-style: normal;
+}
+
+.sicon-twitter:before {
+    content: '\e808';
+}
+
+.sicon-pinterest:before {
+    content: '\e810';
+}
+
+.sicon-facebook:before {
+    content: '\e826';
+}
+
+.sicon-youtube:before {
+    content: '\e81d';
+}
+
+.sicon-linkedin:before {
+    content: '\e835';
+}
+
+.sicon-google:before {
+    content: '\e833';
+}
+
+.sicon-google-search:before {
+    content: '\e833';
+}
+
+.sicon-blog:before {
+    content: '\e829';
+}
+
+.sicon-yelp:before {
+    content: '\e800';
+}
+
+.sicon-myspace:before {
+    content: '\e864';
+}
+
+.sicon-foursquare:before {
+    content: '\e804';
+}
+
+.sicon-flickr:before {
+    content: '\e801';
+}
+
+.sicon-instagram:before {
+    content: '\0028';
+}
+
+.sicon-tumblr:before {
+    content: '\0029';
+}
+
+.sicon-apartmentratingscom:before {
+    content: '\0021';
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    margin: 0 !important;
+    width: auto !important;
+}
+
+.clear {
+    clear: both;
+}
+
+#popUpWindowDialog #popUpWindowHeader {
+    font-family: 'Unica One', sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+#popUpWindowDialog #popUpWindowText {
+    margin: -10px -10px 0 -10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+#popUpWindowDialog .divCloseButton {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body .popUpWindowDialog #popBtnClose {
+    margin: 0;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background: #d59b79 url(../../capi.myleasestar.com/finale.png) no-repeat scroll 9px -631px;
+}
+
+.clickToPopUp {
+    display: none !important;
+}
+
+/* #Pages/01-Header# */
+.header-main .container {
+    position: relative;
+    height: 100%;
+}
+
+.header-contents {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.cancellations {
+    width: 100%;
+    position: relative;
+    height: 1030px;
+    background: url("../../capi.myleasestar.com/houserules.jpg") no-repeat center;
+    padding: 4em 0;
+    background-size: cover;
+}
+
+.houserules-title {
+    font-size: 33px;
+    font-weight: bolder;
+}
+
+.top-spacer {
+    width: 100%;
+    height: 185px;
+    background: black;
+    transition: all .3s ease;
+}
+
+.narrow .top-spacer {
+    height: 110px;
+}
+
+.header-top-bar {
+    background: #1f1f26;
+    text-align: center;
+    z-index: 15;
+}
+
+.header-top-bar a, .header-top-bar a:hover, .header-top-bar a:focus {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.top-link {
+    display: inline-block;
+}
+
+@media (max-width: 1199px) {
+    .top-spacer {
+        height: 228px;
+    }
+
+    .narrow .top-spacer {
+        height: 128px;
+    }
+
+    .top-link {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .top-link a {
+        border-right: 1px solid #3e3e44;
+    }
+
+    .top-link a:first-child {
+        border-left: 1px solid #3e3e44;
+    }
+
+    .header-top-bar a, .header-top-bar a:hover, .header-top-bar a:focus {
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .top-link a em, #_lpChatBtn:before, .top-link .seo-number:before {
+        font-style: normal;
+        display: block;
+        color: #d59b79;
+        font-size: 20px;
+        line-height: 26px;
+        vertical-align: middle;
+        padding-top: 7px;
+    }
+
+    #_lpChatBtn:before {
+        content: '\e806';
+        font-family: 'fontello';
+    }
+
+    .top-link .seo-number:before {
+        content: '\e847';
+        font-family: 'fontello';
+    }
+}
+
+@media (max-width: 450px) {
+    .top-link {
+        width: 33.33%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+    }
+
+    .header-top-bar a, .header-top-bar a:hover, .header-top-bar a:focus {
+        width: 100%;
+        padding: 0 0 5px 0;
+        font-size: 12px;
+    }
+}
+
+.top-specials a {
+    background: #29292e;
+}
+
+.top-specials a.collapsed {
+    background: #1f1f26;
+}
+
+#specials-flyout {
+    position: relative;
+    background: #29292e;
+    z-index: 15;
+    overflow-y: auto;
+}
+
+#specials-flyout .container {
+    padding: 2.5em 15px;
+}
+
+#specials-flyout .row {
+    display: table;
+}
+
+#specials-flyout [class*="col-"] {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    float: none;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    #specials-button-column {
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+    #specials-flyout [class*="col-"] {
+        display: block;
+        height: auto;
+    }
+}
+
+#specials-flyout .cta-button {
+    text-align: right;
+}
+
+.menu-CTAs {
+    white-space: normal;
+}
+
+.header-main {
+    background: #3e3e44;
+    color: #fff;
+    height: 170px;
+    text-align: center;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    z-index: 14;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.narrow .header-main {
+    height: 76px;
+}
+
+#propertyLogo {
+    height: 170px;
+    transition: all .3s ease;
+}
+
+#propertyLogo a {
+    height: 170px;
+    padding: 25px 0;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+#propertyLogo a img {
+    height: 100px;
+    transition: all .3s ease;
+}
+
+.narrow #propertyLogo {
+    height: 76px;
+}
+
+.narrow #propertyLogo a {
+    height: 76px;
+    padding: 8px 0;
+}
+
+.narrow #propertyLogo a img {
+    height: 60px;
+}
+
+@media (max-width: 767px) {
+    .header-main, #propertyLogo {
+        height: 76px;
+    }
+
+    #propertyLogo a {
+        height: 76px;
+        padding: 8px 0;
+    }
+
+    #propertyLogo a img {
+        height: 60px;
+    }
+
+    .top-spacer {
+        height: 134px;
+    }
+}
+
+.header-main a, .header-main a:hover {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: .4em 0;
+    cursor: pointer;
+}
+
+.header-main a em, .header-main a i {
+    color: #d59b79;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.header-main a em.icon-blueprint:before {
+    font-weight: bold;
+}
+
+.header-FP-Link {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.menu-button {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header-main a span {
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.main-menu-container {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    z-index: 26;
+    width: 100%;
+    max-height: calc(100% - 58px);
+    max-height: -moz-calc(100% - 58px);
+    max-height: -webkit-calc(100% - 58px);
+    opacity: 0;
+    overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+    .main-menu-container {
+        overflow-y: auto;
+    }
+}
+
+.main-menu-container {
+    transition: all .5s ease;
+    left: -100%;
+}
+
+#menu-flyout {
+    width: 100%;
+    overflow: visible;
+}
+
+.menu-flyout-container {
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.in .menu-flyout-container {
+    box-shadow: 5px 10px 25px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 10px 25px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 10px 25px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-left .cta-button {
+    text-align: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-left {
+    text-align: center;
+    padding: 2em;
+}
+
+header #menuElem {
+    list-style: none;
+    padding: 2em 0;
+}
+
+header #menuElem li {
+    font-size: 44px;
+    font-weight: 400;
+    font-family: 'Unica One', sans-serif;
+    text-transform: uppercase;
+}
+
+header #menuElem li a, header #menuElem li a:hover {
+    text-decoration: none;
+    color: #1f1f26;
+}
+
+.menu-right {
+    display: none;
+}
+
+.main-menu-container.in {
+    left: 0;
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .main-menu-container {
+        top: 40px;
+        width: 95%;
+        left: -95%;
+    }
+
+    .menu-left {
+        width: 45%;
+        float: left;
+        padding: 3em 2em 8em 5em;
+        text-align: left;
+    }
+
+    .menu-right {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 55%;
+        height: 100%;
+        background: url(../../capi.myleasestar.com/v3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .menu-right:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+/* #Pages/02-Home# */
+.home-section1 {
+    height: 745px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background: url(../../capi.myleasestar.com/varna.jpg);
+    background-size: 1370px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-section-overlay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.home-section1 .container {
+    position: relative;
+    height: calc(100% - 100px);
+    height: -moz-calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+}
+
+.home-banner-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 15px;
+}
+
+.home-banner-text p {
+    font-size: 21px;
+}
+
+@media (max-width: 1199px) {
+    .home-section1 .container {
+        height: 100%;
+    }
+
+    .home-section1 a#scroll-down {
+        display: none !important;
+    }
+}
+
+.home-section1 a#scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: opacity .2s ease;
+}
+
+a#scroll-down.faded {
+    opacity: 0;
+}
+
+.home-section1 a#scroll-down:hover {
+    text-decoration: none;
+}
+
+.home-section1 a#scroll-down:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    display: block;
+    transform: rotate(-45deg);
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .home-section1 {
+        height: auto;
+    }
+
+    .home-banner-text {
+        position: relative;
+        width: 100%;
+        top: initial;
+        transform: translate(0, 0);
+        padding: 30px 15px;
+    }
+}
+
+.cta-button {
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 100%;
+    background: #3e3e44;
+    color: #d59b79;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.cta-button a, .cta-button a:hover, .cta-button a:focus {
+    display: block;
+    color: #d59b79;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /*HEIGHT: 100%;*/
+    width: 100%;
+    padding-left: 1.7em;
+    padding-right: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+
+.cta-button a em {
+    position: absolute;
+    right: 1.6em;
+    line-height: 60px;
+}
+
+.home-section2-right .background-gallery-container {
+    overflow: hidden;
+}
+
+.background-gallery .bg-caption-container {
+    width: 90%;
+    text-align: center;
+}
+
+body .background-gallery .bg-bullets {
+    width: 90%;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+body .background-gallery .bg-bullets li {
+    display: inline-block;
+    float: none;
+    font-size: 36px;
+    opacity: .3;
+    padding: 0 2px;
+    transition: all .3s ease;
+}
+
+body .background-gallery .bg-bullets li.bg-selected {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .background-gallery .bg-caption-container {
+        text-align: center;
+    }
+}
+
+.home-section2-right ul {
+    list-style: none;
+}
+
+.home-section2-left {
+    text-align: center;
+}
+
+.home-cta2 {
+    padding: 1em 3em 2em;
+}
+
+.home-cta, #home-contact-form {
+    margin-bottom: 40px;
+}
+
+.background-video-container .slides-banner .slides li {
+    height: 50vw;
+}
+
+body .flex-direction-nav a {
+    z-index: 9;
+}
+
+@media (min-width: 1200px) {
+    .home-section2 {
+        height: 580px;
+        overflow-y: visible;
+    }
+
+    .background-video-container .slides-banner .slides li {
+        height: 580px;
+    }
+
+    .home-section2-left {
+        width: 50%;
+        float: left;
+        height: calc(100% + 55px);
+        height: -moz-calc(100% + 55px);
+        height: -webkit-calc(100% + 55px);
+        background: #29292e url(../TemplateResources/Standard/3px-tile.png) repeat left top;
+        position: relative;
+        box-shadow: 5px 3px 25px 3px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 5px 3px 25px 3px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 5px 3px 25px 3px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .home-section2-right {
+        width: 50%;
+        float: right;
+        height: 100%;
+    }
+
+    .home-cta2 {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    .home-cta2 .cta-button {
+        text-align: left;
+    }
+}
+
+.home-section3 {
+    width: 100%;
+    position: relative;
+}
+
+.home-section3-background {
+    width: 100%;
+    background: black;
+    position: absolute;
+    background-image: url(../../capi.myleasestar.com/14.jpg);
+    background-repeat: no-repeat;
+    height: 630px;
+    background-size: 1670px;
+    background-position: center;
+}
+
+.contact-mobile-form .contactus-float-input-div input {
+    padding: 5px 0;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .home-section3-background {
+        background: url(https://capi.myleasestar.com/v2/dimg/51691106/480x1200/51691106.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 1200px;
+    }
+}
+
+.home-section3 .container.home-cta-group {
+    padding-top: 3em;
+}
+
+@media (min-width: 1200px) {
+    .container.home-cta-group {
+        transform: translate(0, 8em);
+    }
+
+    .home-section3 .container.home-cta-group {
+        padding-top: 4em;
+    }
+}
+
+@media (max-width: 1199px) {
+    .home-section3-background {
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-section3-background {
+        height: 720px;
+    }
+
+    .home-cta-text {
+        height: 175px;
+    }
+}
+
+.cta-img {
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.cta-img img:hover {
+    transform: scale(1.1);
+}
+
+.cta-img img {
+    width: 100%;
+    transition: all .5s ease;
+
+}
+
+.home-cta-text {
+    background: #1f1f26;
+    height: 175px;
+    padding: 2em;
+}
+
+@media (max-width: 1199px) and (min-width: 991px) {
+    .home-cta-text {
+        height: 232px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .home-cta-text {height: auto;} */
+}
+
+@media (max-width: 767px) {
+    .home-cta-text {
+        height: auto;
+        text-align: center;
+    }
+}
+
+a.home-cta-button {
+    color: #d59b79;
+    background: #3e3e44;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 1.7em;
+}
+
+a.home-cta-button:hover {
+    color: #d59b79;
+    text-decoration: none;
+}
+
+a.home-cta-button span {
+    position: relative;
+    padding-right: 1.6em;
+}
+
+.home-cta-button em {
+    position: absolute;
+    right: 0;
+    line-height: 60px;
+}
+
+.cta-form-container {
+    background: #1f1f26;
+    padding: .5em 2em 0;
+}
+
+#home-contact-form #contactusBedBath, #home-contact-form #contactusReason {
+    display: none;
+}
+
+.contactus-float-input-div {
+    position: relative;
+}
+
+.contact-mobile-form input {
+    background: none;
+    border-bottom: 2px solid #888888 !important;
+    width: 100%;
+}
+
+.contactus-float-input-div {
+    line-height: 2.2;
+}
+
+.contactus-float-input-div span.required-field {
+    position: absolute;
+    right: 5px;
+}
+
+#contactusComments {
+    z-index: 1;
+}
+
+#contactusComments textarea {
+    background: #1f1f26;
+    border: none;
+    border-bottom: 2px solid #888888;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.required-info {
+    display: none;
+}
+
+.cta-form-container {
+    min-height: 554px;
+    position: relative;
+}
+
+.cta-form-container h3 {
+    font-size: 50px;
+}
+
+.sumbitbutton {
+    position: absolute;
+    margin: 0 -2em;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    background: #3e3e44;
+}
+
+@media (max-width: 767px) {
+    .home-cta2, .home-cta-text, .cta-form-container {
+        padding: 1em 15px;
+    }
+
+    .sumbitbutton {
+        margin: 0 -15px;
+    }
+}
+
+body .contact-mobile-form input[type=button] {
+    line-height: 60px;
+    height: initial;
+    border: none !important;
+    width: 100% !important;
+    padding: 0;
+    text-transform: uppercase;
+    color: #d59b79;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contact-mobile-form input.reqErr {
+    border-bottom: 2px solid red !important;
+}
+
+.home-section4 {
+    width: 100%;
+    margin-top: 13em;
+}
+
+#section4-right-panel {
+    padding: 20px;
+    background: rgba(110, 110, 110, 0.4);
+}
+
+.home-section4 .gallery-social-widget .gallery-social-images > a {
+    display: none;
+}
+
+.home-section4 .gallery-social-images a:nth-child(-n+6) {
+    display: block;
+    width: 33.333%;
+}
+
+.gallery-social-widget .gallery-social-footer {
+    display: none;
+}
+
+.home-section4 .gallery-social-widget {
+    margin: 0;
+}
+
+.gallery-social-hashtag a {
+    width: 100% !important;
+    text-align: center;
+}
+
+.gallery-social-widget .gallery-social-card {
+    display: none;
+}
+
+.gallery-social-widget .gallery-social-card--hover {
+    display: block;
+}
+
+#section4-left-panel {
+    padding: 1em 2em;
+}
+
+#section4-left-panel .home-cta-button {
+    display: none;
+    margin-top: 1em;
+}
+
+#section-4-container {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .home-section4 {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    #section4-left-panel {
+        padding: 1em 0 2em;
+    }
+
+    #section4-left-panel h3 {
+        font-size: 54px;
+    }
+}
+
+.home-section5 {
+    margin-top: -50px;
+    height: 810px;
+    width: 100%;
+    background: #777;
+    position: relative;
+}
+
+.home-section6 {
+    padding: 2.6em 0;
+}
+
+.home-section6 .cta-button {
+    float: right;
+}
+
+.office-hours-modal-container {
+    z-index: initial !important;
+}
+
+.contact-main .full-list .office-hours-modal-container {
+    padding: 0;
+}
+
+@media (min-width: 900px) {
+    .home-section6 h6 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-social-card {
+        display: none !important;
+    }
+
+    .home-section4 .gallery-social-images a:nth-child(-n+6) {
+        width: 50%;
+    }
+
+    .home-section6 {
+        text-align: center;
+    }
+
+    .home-section6 .cta-button {
+        float: none;
+    }
+}
+
+.disclaimerText {
+    display: none;
+}
+
+/* #Pages/03-Inner-Pages# */
+/* #Pages/03-Inner-Pages/00-General# */
+
+::-webkit-input-placeholder {
+    color: #1f1f26 !important;
+}
+
+::-moz-placeholder {
+    color: #1f1f26 !important;
+}
+
+::placeholder {
+    color: #1f1f26 !important;
+}
+
+.inner-page-top {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    text-align: center;
+}
+
+.inner-page-background {
+    padding: 4em 0;
+    position: relative;
+    background: url(https://capi.myleasestar.com/v2/dimg/51691046/1920x1600/51691046.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inner-page-background-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.inner-page-background .container {
+    position: relative;
+}
+
+.inner-content-shadow {
+    padding: 20px;
+    background: rgba(75, 75, 70, 0.6);
+}
+
+.inner-content {
+    background: #fff;
+    color: #1f1f26;
+    padding: 2em;
+}
+
+@media (max-width: 767px) {
+    .inner-content {
+        padding: 2em 15px;
+    }
+
+    .inner-content-shadow {
+        padding: 15px;
+    }
+}
+
+.sp-infobox-bot-mobile {
+    color: #1f1f26;
+}
+
+/* #Pages/03-Inner-Pages/01-Floor-Plans# */
+
+.inner-content.floorplans-main {
+    padding: 15px;
+}
+
+#floorplans-background {
+    background: url(https://capi.myleasestar.com/v2/dimg/51691046/1920x1600/51691046.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.FloorPlansV2 .pagination > .active > a, .FloorPlansV2 .pagination > .active > span, .FloorPlansV2 .pagination > .active > a:hover, .FloorPlansV2 .pagination > .active > span:hover, .FloorPlansV2 .pagination > .active > a:focus, .FloorPlansV2 .pagination > .active > span:focus {
+    z-index: auto !important;
+}
+
+body .FloorPlansV2 label:before {
+    display: none;
+}
+
+body .FloorPlansV2 .ac-container article {
+    z-index: initial;
+}
+
+body .FloorPlansV2 #view-area-floor-plan .view-area-floor-plan ul {
+    width: calc(100% - 14px);
+}
+
+body .FloorPlansV2 .ac-container .label {
+    font-size: 17px;
+    height: auto;
+    line-height: 30px;
+    padding: 5px;
+}
+
+body .FloorPlansV2 .rent-filter {
+    width: 85px;
+}
+
+body .FloorPlansV2 .read-more-fp p {
+    font-size: 12px;
+}
+
+body .FloorPlansV2 input#datepicker {
+    width: 100px;
+}
+
+#ui-datepicker-div {
+    font-size: 14px;
+}
+
+.ui-datepicker-month, .ui-datepicker-year {
+    color: #1f1f26 !important;
+}
+
+body .FloorPlansV2 .QuoteDetails:before {
+    left: 95px;
+}
+
+#QuoteDetails input#datepicker2 {
+    width: 120px;
+    max-width: initial !important;
+    padding: 5px 25px 5px 5px !important;
+}
+
+body .FloorPlansV2 input#flex-days {
+    width: 30px;
+    padding: 2px 6px;
+    vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+    body .FloorPlansV2 #sidebar {
+        width: 99% !important;
+        margin: 0 auto;
+        float: none;
+    }
+
+    body .FloorPlansV2 #contentarea {
+        width: 99% !important;
+        margin: 25px auto 0;
+        float: none;
+    }
+
+    body .FloorPlansV2 #floorplan-video-viewer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    #floorplans-background {
+        background: url(https://capi.myleasestar.com/v2/dimg/51691046/480x1200/51691046.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .FloorPlansV2 #view-area-floor-plan {
+        width: 100% !important;
+    }
+
+    .FloorPlansV2 #contentarea {
+        padding: 0 !important;
+    }
+
+    .FloorPlansV2 #floorplan-header {
+        padding: 10px 15px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    body .FloorPlansV2 #cont-leftsidebar .img_area {
+        width: 100%;
+    }
+}
+
+.sister-properties-panel {
+    padding-bottom: 2em;
+}
+
+.sp-container .sp-left-arrow {
+    border-bottom: solid 2px #fff;
+    border-left: solid 2px #fff;
+}
+
+.sp-container .sp-right-arrow {
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+}
+
+.FloorPlansV3 .filters-container {
+    line-height: 40px;
+}
+
+.FloorPlansV3 .close {
+    opacity: 1 !important;
+}
+
+.FloorPlansV3 #topbar .filters-container .ism-dropdown:after {
+    top: 0;
+}
+
+body .FloorPlansV3 #beds_selector a, body .FloorPlansV3 #baths_selector a {
+    padding: 6px 10px;
+}
+
+body .FloorPlansV3 #cont-leftsidebar .img_area img {
+    width: 100%;
+}
+
+body .FloorPlansV3 .fp-switch-tabs .btn-default {
+    width: 60px;
+}
+
+body .FloorPlansV3 .rent-filter {
+    width: 85px;
+    border-radius: 0;
+    padding: 6px 10px;
+    margin: 0;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.FloorPlansV3 .availabilityFilter #flex-days {
+    padding: 0;
+    width: 28px;
+    height: 26px;
+    margin: -10px 5px 0 -13px;
+}
+
+body .FloorPlansV3 #topbar .calendra input {
+    padding: 6px 10px;
+    line-height: 18px;
+}
+
+@media (max-width: 1199px) {
+    .FloorPlansV3 .availUnitsBox:after {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    body .FloorPlansV3 #checkboxShowAvailableOnly {
+        margin: 2px 5px 2px 0 !important;
+    }
+}
+
+@media (max-width: 960px) {
+    body .FloorPlansV3 #contentarea {
+        float: none !important;
+    }
+
+    .FloorPlansV3 .standard-menu, .FloorPlansV3 .rent-container, .FloorPlansV3 .calendra, .FloorPlansV3 .dropdown {
+        min-height: initial !important;
+    }
+
+    body .FloorPlansV3 .butt_area {
+        padding-right: 20px;
+        padding-left: 0;
+        float: right;
+    }
+}
+
+@media (max-width: 690px) {
+    body .FloorPlansV3 .butt_area {
+        padding-right: 0;
+    }
+}
+
+.FloorPlansV3 .availabilityFilter p {
+    letter-spacing: initial;
+    font-size: 12px;
+    line-height: 20px !important;
+    vertical-align: middle;
+}
+
+.FloorPlansV3 .floorplan-video-header h3 {
+    font-size: 20px !important;
+}
+
+/* #Pages/03-Inner-Pages/02-Features# */
+
+#features-background-1 {
+    background: url(https://capi.myleasestar.com/v2/dimg/51691113/1920x1600/51691113.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#features-background-2 {
+    background: url(https://capi.myleasestar.com/v2/dimg/51691112/1920x1600/51691112.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body .image-with-pins .map-tooltip {
+    padding: 2em 2em 1em;
+    text-align: center;
+}
+
+.features-widget-2 {
+    padding: 0 15px;
+}
+
+.features-widget-2 li.tabs-title {
+    border: none;
+}
+
+@media (min-width: 769px) {
+    .features-widget-2 li.tabs-title:first-child {
+        margin-left: 0;
+    }
+
+    .features-widget-2 li.tabs-title {
+        margin: 0 7px;
+    }
+}
+
+.features-widget-2 .amenities-tabbed-container .tabs li .tabs-link {
+    background: #29292e;
+    color: #888888;
+    padding: 15px;
+    transition: all .3s ease;
+}
+
+.features-widget-2 .amenities-tabbed-container .tabs-title.is-active > .tabs-link, .features-widget-2 .amenities-tabbed-container .tabs-title > .tabs-link:hover {
+    background: #d59b79;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .features-widget-2 .amenities-tabbed-container .tabs li .tabs-link {
+        padding: 10px 15px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+li.tabs-title {
+    background: none !important;
+}
+
+.features-widget-2 #example-tabs {
+    margin-bottom: 18px;
+    border: none;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none !important;
+}
+
+div.large-4 ul li:before,
+div.large-6 ul li:before {
+    content: '✓';
+    padding: 0 5px;
+    color: #d58512;
+    font-weight: bolder;
+}
+
+.features-widget-2 .amenities-tabbed-container .tabs-content {
+    background: rgba(255, 255, 255, 0.8);
+    color: #1f1f26;
+    border: none;
+}
+
+.features-widget-2 .view-more-community, .features-widget-2 .view-more-apartment {
+    padding: 15px;
+    text-decoration: none !important;
+}
+
+.features-widget-2 .view-more-community:after, .features-widget-2 .view-more-apartment:after {
+    content: "\f178";
+    font-family: "FontAwesome";
+    margin-left: 10px;
+}
+
+.tabs-panel ul li a {
+    color: #1f1f26 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.tabs-panel ul li a:after {
+    content: "\f03e";
+    font-family: "FontAwesome";
+    margin-left: 8px;
+    color: #888888;
+}
+
+ul.amenities-list-modal, li.apartment-amenity-item {
+    color: #1f1f26;
+}
+
+.amenities-tabbed-header h3 {
+    font-size: 20px;
+}
+
+.amenities-tabbed-header a:hover {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+    .features-widget-2 .amenities-tabbed-container .tabs li .tabs-link {
+        padding: 6px 15px;
+    }
+}
+
+/* #Pages/03-Inner-Pages/03-Gallery# */
+
+#gallery-background {
+    background: url(https://capi.myleasestar.com/v2/dimg/51691079/1920x1600/51691079.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery-background .inner-content-shadow {
+    padding: 10px;
+}
+
+.inner-content.gallery-main {
+    background: transparent;
+    padding: 0;
+}
+
+@media (min-width: 1025px) {
+    #gallery-background .gallerySquareContainer .widget_head {
+        margin-bottom: 0;
+    }
+}
+
+#gallery-background .grid {
+    background: transparent;
+}
+
+#gallery-background .grid-item {
+    background: transparent;
+}
+
+.gallerySquareContainer .top-dropdown {
+    color: #333 !important;
+}
+
+/* #Pages/03-Inner-Pages/04-Neighborhood# */
+
+.inner-content.neighborhood-main {
+    padding: 1em;
+}
+
+body .venue .venueScore, body .infoBox .infoboxContainer .mapVenueDetails .mapVenueScore {
+    background: #d59b79;
+}
+
+body #leftPanelTabs .tabList {
+    padding: 0;
+}
+
+#leftPanelTabs .tabList li a {
+    transition: all .3s ease;
+}
+
+body #leftPanelTabs .tabList li a:hover, body #leftPanelTabs .tabList li a.active {
+    background: #d59b79;
+    color: #fff;
+}
+
+#neighborhood-container * {
+    box-sizing: initial;
+}
+
+#neighborhood-container #topPanel, #neighborhood-container #topPanel * {
+    box-sizing: border-box;
+}
+
+#neighborhood-container #topPanel {
+    background: #1f1f26 !important;
+    padding: 10px 10px 0 10px;
+    height: auto;
+}
+
+body #topPanel .topPanel-PropertyAddress {
+    color: #fff;
+}
+
+body #topPanel .topPanel-PropertyAddress span {
+    display: inline;
+}
+
+body #topPanel .topPanel-PropertyAddress span a {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+body #topPanel .topPanel-PropertyAddress:before {
+    content: "\f041";
+    font-family: "FontAwesome";
+    color: #fff;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#topPanel .topPanel-PropertyAddress img {
+    display: none;
+}
+
+body #topPanel .neighborhood-search-panel, body .rp_n_3_SearchRadius, body #topPanel .topPanel-PropertyAddress {
+    float: none;
+    display: inline-block;
+    height: 48px;
+    line-height: 38px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: none;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+body .neighborhood-search-panel input.searchTextBox {
+    height: 25px;
+}
+
+body .neighborhood-search-panel button#btnSearchVenues {
+    background: none !important;
+}
+
+body .neighborhood-search-panel button#btnSearchVenues:before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    color: #1f1f26;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+body .neighborhood-search-panel button#btnSearchVenues {
+    width: initial;
+    height: initial;
+    overflow: initial;
+    text-indent: 0;
+    margin: 0;
+    font-size: 0;
+    vertical-align: middle;
+    line-height: 32px;
+    padding: 0;
+}
+
+@media (min-width: 1046px) {
+    #neighborhood-container #leftPanel {
+        width: 35%;
+        padding-right: 1%;
+    }
+}
+
+@media (max-width: 960px) {
+    #neighborhood-background .inner-content-shadow {
+        padding: 0;
+    }
+
+    body #neighborhood-container {
+        margin-top: 0;
+    }
+
+    body #neighborhood-container #topPanel .neighborhood-search-panel,
+    body #neighborhood-container .rp_n_3_SearchRadius {
+        background: #fff;
+    }
+
+    body #neighborhood-container .neighborhood-search-panel button#btnSearchVenues {
+        position: initial;
+        top: initial;
+        right: initial;
+    }
+
+    body #neighborhood-container #topPanel .topPanel-PropertyAddress {
+        padding: 5px 10px;
+        margin-bottom: 0;
+    }
+
+    .inner-page-top {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    body #neighborhood-container #topPanel {
+        margin-bottom: 8px !important;
+    }
+}
+
+body #neighborhood-container input, body #neighborhood-container select {
+    color: #1f1f26 !important;
+    height: 25px !important;
+    padding: 0 5px !important;
+}
+
+#topLeftSide label {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    #neighborhood-container #topLeftSide {
+        font-size: 14px;
+    }
+
+    body .neighborhood-search-panel label, body #neighborhood-container .rp_n_3_SearchRadius label {
+        display: inline-block;
+    }
+
+    body #neighborhood-container .rp_n_3_SearchRadius {
+        float: none !important;
+        margin-left: 15px;
+    }
+
+    input#txtSearchQuery {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    select#dropSearchRadius {
+        margin-left: 5px !important;
+    }
+
+    body #topPanel .neighborhood-search-panel, body .rp_n_3_SearchRadius, body #topPanel .topPanel-PropertyAddress {
+        height: 40px;
+        line-height: 31px;
+    }
+
+    #neighborhood-container .rp_n_3_SearchRadius, body .neighborhood-search-panel button#btnSearchVenues {
+        line-height: 30px !important;
+    }
+}
+
+@media (max-width: 680px) {
+    body #topPanel .neighborhood-search-panel, body .rp_n_3_SearchRadius, body #topPanel .topPanel-PropertyAddress {
+        width: 100% !important;
+        margin: 0 !important
+    }
+
+    body #topPanel .neighborhood-search-panel {
+        margin: 0 0 10px !important;
+    }
+
+    body .neighborhood-search-panel button#btnSearchVenues {
+        float: none !important;
+        margin-top: -5px !important;
+    }
+
+    body .rp_n_3_SearchRadius {
+        max-width: initial !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body #topPanel .neighborhood-search-panel, body .rp_n_3_SearchRadius, body #topPanel .topPanel-PropertyAddress {
+        height: auto !important;
+    }
+
+    body #neighborhood-container .neighborhood-search-panel input.searchTextBox {
+        width: calc(100% - 60px);
+        width: -moz-calc(100% - 60px);
+        width: -webkit-calc(100% - 60px);
+    }
+
+    body .neighborhood-search-panel label {
+        width: 100%;
+    }
+
+    body #topLeftSide input {
+        margin-left: 0 !important;
+    }
+
+    body #neighborhood-container #dropSearchRadius {
+        width: auto;
+    }
+
+    body #neighborhood-container #topPanel .neighborhood-search-panel, body #neighborhood-container .rp_n_3_SearchRadius {
+        padding: 3px 5px !important;
+    }
+}
+
+/* #Pages/03-Inner-Pages/05-Contact# */
+
+#contact-background {
+    background: url(https://capi.myleasestar.com/v2/dimg/51691047/1920x1600/51691047.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-main .office-hours-list {
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    color: #1f1f26;
+    font-size: 16px;
+}
+
+.contact-main .oh-header {
+    display: none !important;
+}
+
+#contact-us-left .spacer {
+    height: 20px;
+}
+
+.contact-main h4 {
+    color: #d59b79;
+    text-transform: uppercase;
+}
+
+#contact-left-phone, #contact-left-phone a.seo-number, #contact-left-phone a.seo-number:hover {
+    color: #1f1f26;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contactUsEnhancedContainer {
+    clear: both;
+}
+
+#contactUsEnhancedContainer .form-group {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    #usersourceDiv {
+        margin-top: -1.7em;
+    }
+}
+
+#respondDiv label {
+    width: 120px;
+}
+
+.respondRadios {
+    display: inline-block;
+}
+
+.respondRadios input[type=radio] {
+    line-height: normal;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #1f1f26;
+    vertical-align: middle;
+    background: white;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.respondRadios input[type=radio]:checked {
+    background: #d59b79;
+}
+
+#contactUsEnhancedContainer .form-control#comments {
+    padding-top: 4px;
+    height: 34px;
+}
+
+#contactUsEnhancedContainer .form-control {
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 0;
+    box-shadow: none;
+    color: #1f1f26;
+    padding: 0;
+    font-size: 18px;
+    background: #fff;
+}
+
+#contactUsEnhancedContainer .form-group label {
+    font-weight: 500;
+}
+
+#contactUsEnhancedContainer::placeholder {
+    color: #1f1f26;
+}
+
+#moveDateDiv label {
+    width: 120px;
+}
+
+#moveDateDiv input {
+    width: calc(100% - 125px);
+    width: -moz-calc(100% - 125px);
+    width: -webkit-calc(100% - 125px);
+    display: inline-block;
+}
+
+#requiredNotation {
+    display: none;
+}
+
+#contact-right .required-group:before {
+    left: -10px;
+}
+
+.page-contact .validate-field {
+    border-bottom: 2px solid red !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #contact-right .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 991px) {
+    #contact-us-left {
+        text-align: center;
+    }
+
+    #contact-right .col-md-6,
+    #contactUsEnhancedContainer .form-control {
+        font-size: 16px;
+    }
+
+    #contactUsEnhancedContainer .form-group {
+        margin-bottom: 36px;
+    }
+}
+
+#btnEnhSubmit {
+    text-decoration: none;
+    background: #d59b79;
+    padding: 1em 2em;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+/* #Pages/03-Inner-Pages/06-Blog# */
+
+body .page_blog {
+    padding: 0;
+}
+
+#blog-background {
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body .blog-search-box {
+    height: 30px;
+}
+
+@media (min-width: 1025px) {
+    body .blog-list-item-right, body .blog-details-right {
+        width: 180px;
+    }
+
+    body .blog-list-item-left, body .blog-details-body {
+        width: calc(100% - 200px);
+        width: -moz-calc(100% - 200px);
+        width: -webkit-calc(100% - 200px);
+    }
+}
+
+body .blog-list-item-title-container h3 a, body .blog-details-title-container h3 {
+    color: #d59b79 !important;
+}
+
+/* #Pages/04-Footer# */
+footer {
+    background: #3e3e44;
+    color: #fff;
+    padding: 3em 0;
+}
+
+footer img {
+    max-width: 20%;
+    display: block;
+    margin: auto;
+}
+
+footer h5 {
+    color: #d59b79;
+}
+
+.footerCopyright {
+    color: #d59b79;
+    margin-bottom: 10px;
+}
+
+#footerLogo1 {
+    margin-bottom: 20px;
+}
+
+footer .office-hours-modal-container {
+    padding: 0;
+}
+
+footer .oh-header {
+    display: none !important;
+}
+
+footer .office-hours-list {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#footerLogo2 a {
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.headerlogo {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 20px;
+    letter-spacing: 2px;
+}
+
+#footerLogo2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #menuEle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social_media a {
+    font-size: 22px;
+    background: #fff;
+    color: #3e3e44;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+footer .social_media a:hover {
+    color: #333;
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.footer-icons > div {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+footer .social_media {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.social_media a {
+    margin: 0 10px 20px;
+}
+
+body .gallery-social-widget .gallery-social-images > a .gallery-social-card .gallery-social-card-content .gallery-social-hashtag {
+    font-size: 2.0rem;
+}
+
+body #ADA-HUD-Links a svg {
+    fill: #fff;
+}
+
+body #ADA-HUD-Links {
+    transform: translate(0, 8px);
+    margin-right: 0;
+}
+
+@media (max-width: 991px) {
+    footer {
+        text-align: center;
+    }
+
+    #footerLogo1, #footerLogo2 {
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding: 0 2%;
+        display: block;
+    }
+
+    footer .col-md-3.col-sm-5 {
+        text-align: left;
+    }
+
+    .footer-icons > div {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .footer-icons-right {
+        margin-right: 0 !important;
+    }
+
+    footer .social_media {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer, footer .col-md-3.col-sm-5, .col-md-3.col-sm-5 li {
+        text-align: center !important;
+    }
+
+    #footerLogo1, #footerLogo2 {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
